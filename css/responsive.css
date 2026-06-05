@@ -1,0 +1,217 @@
+/* ==================================================
+   DESKTOP
+================================================== */
+
+@media (min-width: 1024px) {
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    .header__content {
+
+        padding: 20px 80px;
+
+        justify-content: space-between;
+
+    }
+
+    .header__logo img {
+
+        width: auto;
+        
+        height: 60px;
+
+    }
+
+    .header__cta {
+
+        padding: 20px 60px;
+
+        display: flex;
+
+    }
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    .hero {
+
+        padding: 80px 0 80px;
+
+    }
+
+    .hero__title {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: var(--text-4xl);
+
+    }
+
+    .hero__avatars img {
+        
+        width: 32px;
+        height: 32px;
+
+    }
+
+    .hero__description {
+
+        max-width: 800px;
+
+        font-size: var(--text-lg);
+
+    }
+
+    .hero__card {
+
+        padding: 60px;
+
+    }
+
+    .hero__card-title {
+
+      font-size: var(--text-lg);
+
+    }
+
+    .hero__leaders span {
+
+        font-size: var(--text-lg);
+
+    }
+
+    .hero__label {
+
+      font-size: var(--text-lg);
+
+    }
+
+    .hero__number {
+
+      font-size: var(--text-2xl);
+
+    }
+
+    .hero__vip-text {
+
+        max-width: 700px;
+
+        font-size: var(--text-lg);
+
+    }
+
+
+    .btn {
+
+      padding: 20px 60px;
+
+      font-size: var(--text-md);
+
+    }
+
+    /* ==========================
+       STORY
+    ========================== */
+
+    .story {
+
+        padding: 40px 0;
+
+    }
+
+    .story__title {
+
+        font-size: var(--text-xl);
+
+    }
+
+    .story__subtitle {
+
+      font-size: var(--text-lg);
+
+    }
+
+    .story__card {
+
+        max-width: 760px;
+
+        padding: 40px;
+
+    }
+
+    .story__text {
+
+        font-size: var(--text-md);
+
+    }
+
+    /* ==========================
+       CTA
+    ========================== */
+
+    .cta-final {
+
+        padding: 40px 0 120px 0;
+
+    }
+
+    .cta-final__title {
+
+        max-width: 800px;
+
+        font-size: var(--text-xl);
+
+    }
+
+    .cta-final__description {
+
+        max-width: 800px;
+
+        font-size: var(--text-lg);
+
+    }
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    .footer {
+
+        padding: 20px 80px;
+
+    }
+
+    .footer__content {
+
+        min-height: 132px;
+
+        justify-content: space-between;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+/* ==========================================
+   MOBILE PEQUENO
+========================================== */
+
+    .hero__title {
+
+        font-size: var(--text-xl);
+
+        line-height: 1.1;
+
+        max-width: 320px;
+
+        margin-inline: auto;
+
+    }
+
+}

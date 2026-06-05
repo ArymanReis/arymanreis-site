@@ -1,0 +1,61 @@
+/* ==================================================
+   CTA FINAL
+================================================== */
+
+.cta-final {
+
+    padding: 80px 0;
+
+}
+
+.cta-final__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.cta-final__title {
+
+    max-width: 400px;
+
+    color: var(--color-white);
+
+    text-align: center;
+
+    font-family: var(--font-primary);
+
+    font-size: var(--text-lg);
+
+    font-weight: 600;
+
+    margin-bottom: 40px;
+
+}
+
+.cta-final__description {
+
+    max-width: 700px;
+
+    color: var(--color-white);
+
+    text-align: center;
+
+    font-family: var(--font-primary);
+
+    font-size: var(--text-md);
+
+    font-weight: 400;
+
+    margin-bottom: 40px;
+
+}
+
+.cta-final__description strong {
+
+    font-weight: 600;
+
+}

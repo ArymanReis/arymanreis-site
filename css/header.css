@@ -1,0 +1,61 @@
+/* ==================================================
+   HEADER
+================================================== */
+
+.header {
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    background: var(--color-primary);
+
+}
+
+.header__content {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px 0;
+
+}
+
+.header__logo img {
+
+    width: auto;
+
+    height: 40px;
+
+}
+
+.header__cta {
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    border-radius: var(--radius);
+
+    border: 1px solid var(--color-white);
+
+    color: var(--color-white);
+
+    font-size: var(--text-md);
+
+    font-weight: 600;
+
+    transition: .3s ease;
+
+}
+
+.header__cta:hover {
+
+    background: rgba(255,255,255,.08);
+
+}
