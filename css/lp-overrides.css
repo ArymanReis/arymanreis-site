@@ -1,0 +1,131 @@
+/* ==================================================
+   LP OVERRIDES
+   Sobrescreve estilos dos componentes compartilhados
+   apenas onde a landing page difere do index.html.
+   Nunca duplicar regras já definidas nos arquivos base.
+================================================== */
+
+/* --------------------------------------------------
+   MAIN — gap entre seções (Figma: gap: 80px)
+   Cada seção tem padding-top: 40px e padding-bottom: 0.
+   O gap do main é responsável pelo espaço entre seções.
+   Isso evita o double-spacing de 80px+80px entre seções.
+-------------------------------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Seções compartilhadas usam padding: 80px 0 no base CSS.
+   Sobrescrever para padding-top: 40px; padding-bottom: 0
+   para seguir o padrão do Figma com gap no main. */
+
+.hero       { padding: 40px 0 0; }
+.story      { padding: 40px 0 0; }
+.faq        { padding: 40px 0 0; }
+.cta-final  { padding: 40px 0 80px; }
+
+/* --------------------------------------------------
+   HEADER — fundo azul (igual ao index.html)
+-------------------------------------------------- */
+
+.header {
+    background: var(--color-primary);
+}
+
+/* --------------------------------------------------
+   HERO — ajustes de layout para a landing page
+-------------------------------------------------- */
+
+/* Usar gap no flex container em vez de margin-bottom em cada filho */
+.hero__content {
+    gap: 40px;
+}
+
+/* Zerar margens existentes para não conflitar com o gap */
+.hero__title,
+.hero__description,
+.hero__vip-text {
+    margin-bottom: 0;
+}
+
+/* Card: coluna centralizada com largura total — filho interno gerencia a linha horizontal */
+.hero__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* Card item: centralizado; remove min-width que quebra o layout em coluna */
+.hero__card-item {
+    align-items: center;
+}
+
+.hero__card-item:last-child {
+    min-width: unset;       /* hero.css força 150px no último item — desnecessário em coluna */
+}
+
+/* Divider: horizontal no layout em coluna (hero.css é vertical 1px×80px) */
+.hero__divider {
+    display: flex;
+    width: 3px;
+    height: 80px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+/* Leaders: centralizado */
+.hero__leaders {
+    justify-content: center;
+}
+
+/* CTA do hero: largura total no mobile */
+.hero .btn {
+    width: 100%;
+}
+
+/* --------------------------------------------------
+   STORY — título centralizado + zera margin-bottom do último parágrafo
+-------------------------------------------------- */
+
+.story__title {
+    text-align: center;
+}
+
+.story__text--last {
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+   FAQ — título centralizado
+-------------------------------------------------- */
+
+.faq__title {
+    text-align: center;
+}
+
+/* --------------------------------------------------
+   CTA FINAL — ajustes para landing page
+-------------------------------------------------- */
+
+.cta-final__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cta-final .btn {
+    width: 100%;
+}
+
+/* FOOTER — fundo azul (padrão footer.css, sem override necessário) */
+
+/* Header CTA: oculto em mobile — nenhum lp-*.css posterior mexe nesta regra */
+.header__cta { display: none; }

@@ -1,0 +1,382 @@
+/* ==================================================
+   RESPONSIVIDADE — Landing Page
+   Mobile-first. 6 frames Figma → 6 breakpoints.
+   Esta página não importa responsive.css (exclusivo
+   do index.html). Todas as media queries ficam aqui.
+================================================== */
+
+/* ==================================================
+   BASE MOBILE — 320px
+   Regras SEM media query aplicadas aqui porque este
+   arquivo é o ÚLTIMO carregado (linha 42 no HTML),
+   garantindo que sobrescrevam qualquer lp-*.css de seção.
+================================================== */
+
+/* Títulos: base mobile — garante todas as propriedades do Figma independente de qual
+   lp-*.css define tamanhos ou pesos diferentes */
+.hero__title,
+.problem__title,
+.method__title,
+.bonus__title,
+.modules__title,
+.audience__title,
+.pricing__title,
+.guarantee__title,
+.about__title,
+.faq__title,
+.cta-final__title {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.8;
+    color: var(--color-white);
+}
+
+/* Hero eyebrow: lp-hero.css define var(--text-md)=16px, este arquivo ganha */
+.hero__eyebrow { font-size: 14px; }
+
+/* Story: corpo 14px no menor mobile (lp-overrides seria sobrescrito por story.css) */
+.story__text,
+.story__emphasis { font-size: 14px; line-height: 24px; }
+
+/* Botão: base mobile — uppercase e peso semibold conforme Figma */
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Texto longo do botão: oculto em mobile, aparece em 768px+ */
+.btn__text--long { display: none; }
+
+/* FAQ: mixed case — o Figma não aplica uppercase neste título */
+.faq__title { text-transform: none; }
+
+/* ==================================================
+   ≥ 375px — Títulos e botão crescem
+================================================== */
+@media (min-width: 375px) {
+
+    .hero__title,
+    .problem__title,
+    .method__title,
+    .bonus__title,
+    .modules__title,
+    .audience__title,
+    .pricing__title,
+    .guarantee__title,
+    .about__title,
+    .faq__title,
+    .cta-final__title {
+        font-size: 24px;
+    }
+
+    .btn { font-size: 16px; }
+
+}
+
+/* ==================================================
+   ≥ 414px — Títulos crescem mais
+================================================== */
+@media (min-width: 414px) {
+
+    .hero__title,
+    .problem__title,
+    .method__title,
+    .bonus__title,
+    .modules__title,
+    .audience__title,
+    .pricing__title,
+    .guarantee__title,
+    .about__title,
+    .faq__title,
+    .cta-final__title {
+        font-size: 28px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 768px — Tablet
+================================================== */
+@media (min-width: 768px) {
+
+    /* Container: padding 40px lateral */
+    .container { padding-inline: 40px; }
+
+    /* Main: gap maior entre seções */
+    main { gap: 120px; }
+
+    /* Gap interno das seções */
+    .hero__content,
+    .problem__content,
+    .story__content,
+    .method__content,
+    .bonus__content,
+    .modules__content,
+    .pricing__content,
+    .guarantee__content,
+    .about__content,
+    .faq__content,
+    .cta-final__content {
+        gap: 60px;
+    }
+
+    /* Títulos: 40px */
+    .hero__title,
+    .problem__title,
+    .method__title,
+    .bonus__title,
+    .modules__title,
+    .audience__title,
+    .pricing__title,
+    .guarantee__title,
+    .about__title,
+    .faq__title,
+    .cta-final__title {
+        font-size: 40px;
+    }
+
+    /* Hero: saudação 16px */
+    .hero__eyebrow { font-size: 16px; }
+
+    /* Story: corpo volta para 16px */
+    .story__text,
+    .story__emphasis { font-size: 16px; }
+
+    /* Hero: card centralizado, padding lateral maior */
+    .hero__card {
+        align-self: center;
+        padding: 40px 60px;
+    }
+
+    /* Hero: VSL em 16:9 */
+    .hero__vsl { aspect-ratio: 16 / 9; }
+    .hero__vsl iframe { width: 100%; height: 100%; }
+
+    /* Hero: <br> mobile escondido a partir do tablet */
+    .hero__br { display: none; }
+
+    /* CTA Final: remove max-width: 400px herdado do cta.css */
+    .cta-final__title { max-width: none; }
+
+    /* Botão: padding generoso + troca de texto */
+    .btn { padding: 16px 40px; }
+    .btn__text--short { display: none; }
+    .btn__text--long { display: inline; }
+
+    /* Pricing: card sem largura máxima, padding 60px, stretch */
+    .pricing__card {
+        max-width: none;
+        align-self: stretch;
+        padding: 60px;
+    }
+
+    /* Footer: padding 40px */
+    .footer { padding: 40px; }
+
+}
+
+/* ==================================================
+   ≥ 1024px — Desktop
+================================================== */
+@media (min-width: 1024px) {
+
+    /* Container: padding 120px lateral */
+    .container { padding-inline: 120px; }
+
+    /* --------------------------------------------------
+       HEADER — layout horizontal com CTA
+    -------------------------------------------------- */
+    .header__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 40px;
+    }
+
+    .header__logo img { height: 60px; }
+
+    .header__cta {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: rgba(251, 248, 252, 0.20);
+        border: 1px solid rgba(231, 231, 232, 0.50);
+        border-radius: var(--radius);
+        color: var(--color-white);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    /* --------------------------------------------------
+       TIPOGRAFIA — títulos 52px
+    -------------------------------------------------- */
+    .hero__title,
+    .problem__title,
+    .method__title,
+    .bonus__title,
+    .modules__title,
+    .audience__title,
+    .pricing__title,
+    .guarantee__title,
+    .about__title,
+    .faq__title,
+    .cta-final__title {
+        font-size: 52px;
+    }
+
+    /* --------------------------------------------------
+       TIPOGRAFIA — corpo 24px
+       (Story mantém 16px — narrativa longa)
+    -------------------------------------------------- */
+    .hero__eyebrow,
+    .hero__description,
+    .problem__body,
+    .problem__list-item,
+    .callout__text,
+    .method__body,
+    .method__step-text,
+    .method__label,
+    .bonus__item-title,
+    .bonus__item-desc,
+    .modules__item-title,
+    .modules__item-desc,
+    .audience__item,
+    .pricing__package-label,
+    .pricing__items li,
+    .pricing__scarcity,
+    .guarantee__subtitle,
+    .guarantee__body,
+    .about__text,
+    .cta-final__description {
+        font-size: 24px;
+    }
+
+    /* Story: mantém 16px */
+    .story__text,
+    .story__emphasis { font-size: 16px; }
+
+    /* --------------------------------------------------
+       BOTÕES — 24px, padding generoso
+    -------------------------------------------------- */
+    .btn {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    /* Hero e CTA Final: botão auto-width */
+    .hero .btn,
+    .cta-final .btn { width: auto; }
+
+    /* --------------------------------------------------
+       HERO
+    -------------------------------------------------- */
+    .hero__card { padding: 60px 80px; }
+
+    .hero__number { font-size: 40px; }
+
+    .hero__label,
+    .hero__card-title,
+    .hero__leaders span { font-size: 24px; }
+
+    /* --------------------------------------------------
+       MÉTODO — badge maior
+    -------------------------------------------------- */
+    .method__step-num {
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+    }
+
+    /* --------------------------------------------------
+       GARANTIA — badge maior
+    -------------------------------------------------- */
+    .guarantee__badge {
+        width: 80px;
+        height: 80px;
+        font-size: 48px;
+        border-width: 6px;
+    }
+
+    /* --------------------------------------------------
+       PRICING — card com padding interno maior
+    -------------------------------------------------- */
+    .pricing__card { padding: 60px; }
+    .pricing__cta { width: auto; }
+
+    /* --------------------------------------------------
+       ABOUT — foto centralizada com tamanho máximo
+    -------------------------------------------------- */
+    .about__photo {
+        max-width: 467px;
+        margin-inline: auto;
+    }
+
+    /* --------------------------------------------------
+       CTA FINAL — largura do título
+    -------------------------------------------------- */
+    .cta-final__title { max-width: 784px; margin-inline: auto; }
+
+    /* --------------------------------------------------
+       FOOTER
+    -------------------------------------------------- */
+    .footer { padding: 40px 0; }
+
+}
+
+/* ==================================================
+   ≥ 1280px — Wide Desktop
+================================================== */
+@media (min-width: 1280px) {
+
+    /* Container: remove o cap de 1024px → conteúdo útil = 1040px
+       (1280 − 2×120px padding = 1040px, conforme Figma) */
+    .container { max-width: 1280px; }
+
+    /* Módulos: 3 colunas com gap 40px */
+    .modules__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    /* Para quem é / não é: 2 colunas com gap 40px */
+    .audience__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    /* Pricing: padding 60px vertical, 120px horizontal (Figma: 60|120|60|120) */
+    .pricing__card { padding: 60px 120px; }
+
+    /* CTA Final: título expande de 784px (1024px) para 1040px */
+    .cta-final__title { max-width: 1040px; }
+
+    /* Botões secundários: padding 16px 20px — hero mantém 20px todos */
+    .pricing__cta,
+    .cta-final .btn { padding: 16px 20px; }
+
+    /* FAQ: pergunta Bold/24px e resposta Padrão/24px (Figma 1280px) */
+    .faq__question {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-white);
+        line-height: normal;
+    }
+
+    .faq__answer p {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--color-white);
+        line-height: normal;
+    }
+
+}

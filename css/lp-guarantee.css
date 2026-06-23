@@ -1,0 +1,49 @@
+/* ==================================================
+   GARANTIA
+   Seção nova — reutilizável em futuras landing pages.
+================================================== */
+
+.guarantee {
+    padding: 40px 0 0;
+}
+
+.guarantee__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.guarantee__title {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.guarantee__badge {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.guarantee__subtitle {
+    font-size: var(--text-md);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.guarantee__body {
+    font-size: var(--text-md);
+    line-height: 1.7;
+    max-width: 480px;
+    opacity: 0.9;
+}

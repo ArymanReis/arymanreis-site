@@ -1,0 +1,49 @@
+/* ==================================================
+   PARA QUEM É / NÃO É
+   Seção nova — reutilizável em futuras landing pages.
+================================================== */
+
+.audience {
+    padding: 40px 0 0;
+}
+
+.audience__content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.audience__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.audience__title {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.audience__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.audience__item {
+    font-size: var(--text-md);
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.audience__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}

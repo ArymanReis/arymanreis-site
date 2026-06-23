@@ -1,0 +1,121 @@
+/* ==================================================
+   RESPONSIVIDADE — Página de Agradecimento
+   Mobile-first. Mesmos breakpoints da landing page.
+   Este arquivo é carregado por último — sobrescreve
+   qualquer regra de agradecimento.css quando necessário.
+================================================== */
+
+/* ==================================================
+   ≥ 375px — Títulos crescem
+================================================== */
+@media (min-width: 375px) {
+
+    .thankyou__title,
+    .thankyou__access-title,
+    .thankyou__checklist-title {
+        font-size: 24px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 414px — Títulos crescem mais
+================================================== */
+@media (min-width: 414px) {
+
+    .thankyou__title,
+    .thankyou__access-title,
+    .thankyou__checklist-title {
+        font-size: 28px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 768px — Tablet
+================================================== */
+@media (min-width: 768px) {
+
+    /* Container: padding 40px lateral */
+    .container { padding-inline: 40px; }
+
+    /* Gap entre blocos da página: 80px */
+    .thankyou__content { gap: 80px; }
+
+    /* Footer: padding 40px */
+    .footer { padding: 40px; }
+
+    /* Títulos: 40px */
+    .thankyou__title,
+    .thankyou__access-title,
+    .thankyou__checklist-title {
+        font-size: 40px;
+    }
+
+    /* Eyebrow: 16px */
+    .thankyou__eyebrow { font-size: 16px; }
+
+    /* Botão: auto-width, padding generoso */
+    .thankyou .btn {
+        width: auto;
+        padding: 16px 40px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 1024px — Desktop
+================================================== */
+@media (min-width: 1024px) {
+
+    /* Container: padding 120px lateral */
+    .container { padding-inline: 120px; }
+
+    /* Header: layout horizontal */
+    .header__content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-block: 40px;
+    }
+
+    .header__logo img { height: 60px; }
+
+    /* Títulos: 52px */
+    .thankyou__title,
+    .thankyou__access-title,
+    .thankyou__checklist-title {
+        font-size: 52px;
+    }
+
+    /* Corpo/textos: 24px */
+    .thankyou__eyebrow,
+    .thankyou__body,
+    .thankyou__access-desc,
+    .thankyou__confirm-box p,
+    .thankyou__checklist-item span,
+    .thankyou__linkedin p,
+    .thankyou__contact {
+        font-size: 24px;
+    }
+
+    /* Botão: 24px, padding generoso */
+    .thankyou .btn {
+        font-size: 24px;
+        padding: 20px 40px;
+    }
+
+    /* Footer */
+    .footer { padding: 40px 0; }
+
+}
+
+/* ==================================================
+   ≥ 1280px — Wide Desktop
+================================================== */
+@media (min-width: 1280px) {
+
+    /* Remove o cap de 1024px herdado do base.css */
+    .container { max-width: 1280px; }
+
+}

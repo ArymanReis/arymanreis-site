@@ -1,0 +1,75 @@
+/* ==================================================
+   BÔNUS
+   Seção nova — reutilizável em futuras landing pages.
+================================================== */
+
+.bonus {
+    padding: 40px 0 0;
+}
+
+.bonus__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.bonus__title {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bonus__highlight {
+    color: var(--color-primary);
+}
+
+.bonus__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    border-radius: var(--radius);
+    background: rgba(251, 248, 252, 0.20);
+}
+
+.bonus__card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(218deg, #C5C5C7 13.21%, #97979A 42.1%, #4D4DFF 83.54%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.bonus__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bonus__item-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.bonus__item-desc {
+    font-size: var(--text-md);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+    opacity: 0.85;
+}

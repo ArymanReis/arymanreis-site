@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Meta Básico -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Compra Confirmada — Aryman Reis | Dashboard de Produtividade</title>
+
+    <meta name="description"
+        content="Sua compra foi confirmada. Acesse agora sua área de membros e comece a construir seu dashboard de produtividade.">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="author" content="Aryman Reis">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/icon-aryman.ico" type="image/x-icon">
+
+    <!-- CSS compartilhado -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- CSS exclusivo desta página -->
+    <link rel="stylesheet" href="./css/agradecimento.css">
+    <link rel="stylesheet" href="./css/agradecimento-responsive.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJQT0X3ZKF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DJQT0X3ZKF');
+    </script>
+
+    <!-- Hooks para pixels (configuração futura) -->
+    <!-- Google Ads Pixel: inserir aqui -->
+    <!-- Facebook Pixel: inserir aqui -->
+
+    <script src="./js/analytics.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+
+            <a href="./index.html" class="header__logo">
+                <img src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- ==========================================
+     AGRADECIMENTO
+========================================== -->
+<section class="thankyou">
+    <div class="container">
+        <div class="thankyou__content">
+
+            <!-- Box de confirmação de compra -->
+            <div class="thankyou__confirm-box">
+                <p><strong>Sua compra foi confirmada.</strong> Você receberá um e-mail com os dados de acesso em instantes.</p>
+            </div>
+
+            <!-- Saudação -->
+            <p class="thankyou__eyebrow">Meus parabéns pela coragem, Diretoria. 👋</p>
+
+            <!-- Título principal -->
+            <h1 class="thankyou__title">Muito obrigado!</h1>
+
+            <!-- Corpo -->
+            <p class="thankyou__body">Que <strong>Deus abençoe</strong> seus estudos e te capacite para entrar nesse novo nível profissional e se tornar um <strong>líder raro.</strong></p>
+
+            <!-- CTA — Acesso à área de membros -->
+            <div class="thankyou__access">
+
+                <h2 class="thankyou__access-title">Acesse sua área de membros</h2>
+
+                <p class="thankyou__access-desc">Acesse pelo link abaixo ou pelo e-mail que você acabou de receber.</p>
+
+                <a class="btn" href="https://members.kiwify.com/?club=36cb394b-218c-4e54-8466-cb8546b394e5"
+                   target="_blank" rel="noopener"
+                   onclick="trackMembersArea('thankyou')">
+                    Acessar meu curso
+                    <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+                </a>
+
+            </div>
+
+            <!-- Checklist de conteúdos -->
+            <div class="thankyou__checklist-block">
+
+                <h2 class="thankyou__checklist-title">Dentro da sua área de membros você já encontra:</h2>
+
+                <ul class="thankyou__checklist">
+                    <li class="thankyou__checklist-item">
+                        <img src="./assets/icons/check-open.svg" alt="" class="thankyou__check-icon" aria-hidden="true">
+                        <span>O curso completo</span>
+                    </li>
+                    <li class="thankyou__checklist-item">
+                        <img src="./assets/icons/check-open.svg" alt="" class="thankyou__check-icon" aria-hidden="true">
+                        <span>Tutor IA 24h</span>
+                    </li>
+                    <li class="thankyou__checklist-item">
+                        <img src="./assets/icons/check-open.svg" alt="" class="thankyou__check-icon" aria-hidden="true">
+                        <span>Biblioteca de KPIs por Setor</span>
+                    </li>
+                    <li class="thankyou__checklist-item">
+                        <img src="./assets/icons/check-open.svg" alt="" class="thankyou__check-icon" aria-hidden="true">
+                        <span>Kit de Reunião 1:1 Baseada em Dados</span>
+                    </li>
+                    <li class="thankyou__checklist-item">
+                        <img src="./assets/icons/check-open.svg" alt="" class="thankyou__check-icon" aria-hidden="true">
+                        <span>Checklist do Líder Orientado por Dados</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="thankyou__linkedin">
+                <p>Me segue no LinkedIn e me conta como está sendo sua jornada.</p>
+                <a href="https://www.linkedin.com/in/arymanreis/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="thankyou__social-link"
+                   onclick="gtag('event', 'linkedin_click')">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn" class="thankyou__social-icon">
+                    <span>@arymanreis</span>
+                </a>
+            </div>
+
+            <!-- Contato -->
+            <p class="thankyou__contact">Dúvidas? Me chama em <a href="mailto:contato@arymanreis.com.br">contato@arymanreis.com.br</a></p>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+
+            <img class="footer__logo" src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+
+            <div class="footer__links">
+                <a href="pages/privacidade.html">Políticas de Privacidade</a>
+                <a href="pages/termos.html">Termos de Uso</a>
+                <a href="#">Método LPE</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.instagram.com/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'instagram_click')">
+                    <img src="./assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@arymanreis" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'youtube_click')">
+                    <img src="./assets/icons/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/in/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click')">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <span>@arymanreis</span>
+            </div>
+
+            <p class="footer__copyright">© 2026 Aryman Reis. Todos os direitos reservados.</p>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

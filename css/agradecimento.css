@@ -1,0 +1,237 @@
+/* ==================================================
+   AGRADECIMENTO — Página pós-compra
+   Estilos exclusivos desta página.
+   Compartilhados: header.css, hero.css (.btn), footer.css
+================================================== */
+
+/* --------------------------------------------------
+   HEADER — sem CTA nesta página
+-------------------------------------------------- */
+.header__cta { display: none; }
+
+/* --------------------------------------------------
+   SEÇÃO PRINCIPAL
+-------------------------------------------------- */
+.thankyou {
+    background: var(--color-bg);
+    padding: 40px 0 80px;
+}
+
+.thankyou__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* --------------------------------------------------
+   BOX DE CONFIRMAÇÃO
+   Borda gradiente verde→azul (mesma técnica do bonus card)
+-------------------------------------------------- */
+.thankyou__confirm-box {
+    position: relative;
+    background: rgba(251, 248, 252, 0.20);
+    border-radius: var(--radius);
+    padding: 20px;
+    align-self: stretch;
+    text-align: center;
+}
+
+.thankyou__confirm-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    padding: 1px;
+    background: linear-gradient(218deg, #04D939 13.21%, #03A63C 42.1%, #4D4DFF 83.54%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.thankyou__confirm-box p {
+    font-size: 16px;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   TIPOGRAFIA GERAL
+-------------------------------------------------- */
+.thankyou__eyebrow {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+    margin: 0;
+}
+
+.thankyou__title {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+.thankyou__body {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    align-self: stretch;
+}
+
+/* --------------------------------------------------
+   BLOCO CTA — ACESSE SUA ÁREA DE MEMBROS
+   Padding adicional de 20px cria área interna de 240px
+   (conforme Figma: button 240×49px dentro de 280px de conteúdo)
+-------------------------------------------------- */
+.thankyou__access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-inline: 20px;
+    align-self: stretch;
+}
+
+.thankyou__access-title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+.thankyou__access-desc {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+/* Botão: full-width dentro do bloco de acesso (240px no mobile) */
+.thankyou .btn {
+    width: 100%;
+    font-size: 14px;
+}
+
+/* --------------------------------------------------
+   CHECKLIST DE CONTEÚDOS
+-------------------------------------------------- */
+.thankyou__checklist-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.thankyou__checklist-title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+.thankyou__checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.thankyou__checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.thankyou__check-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.thankyou__checklist-item span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: left;
+    line-height: normal;
+}
+
+/* --------------------------------------------------
+   LINKEDIN
+-------------------------------------------------- */
+.thankyou__linkedin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.thankyou__linkedin p {
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+.thankyou__social-link {
+    display: flex;
+    align-items: center;
+    gap: 4.651px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.thankyou__social-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.thankyou__social-link span {
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+/* --------------------------------------------------
+   CONTATO
+-------------------------------------------------- */
+.thankyou__contact {
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-white);
+    line-height: normal;
+    margin: 0;
+}
+
+.thankyou__contact a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.thankyou__contact a:hover {
+    text-decoration: underline;
+}

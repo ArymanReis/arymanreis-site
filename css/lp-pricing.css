@@ -1,0 +1,169 @@
+/* ==================================================
+   OFERTA / PRICING
+   Seção nova — reutilizável em futuras landing pages.
+================================================== */
+
+.pricing {
+    padding: 40px 0 0;
+}
+
+.pricing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.pricing__title {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.pricing__card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: var(--radius);
+    background: rgba(251, 248, 252, 0.20);
+    backdrop-filter: blur(25px);
+}
+
+.pricing__card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(218deg, #C5C5C7 13.21%, #97979A 42.1%, #4D4DFF 83.54%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.pricing__card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.pricing__logo {
+    height: 40px;
+    width: auto;
+}
+
+.pricing__package-label {
+    font-size: var(--text-md);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.pricing__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.pricing__items li {
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+
+.pricing__scarcity {
+    padding: 16px;
+    border-radius: var(--radius);
+    background: var(--color-white);
+    color: var(--color-primamay-black);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+}
+
+.pricing__price-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.pricing__price-old {
+    font-size: var(--text-sm);
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.pricing__price-new {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    line-height: 1;
+}
+
+.pricing__currency {
+    font-size: var(--text-md);
+    font-weight: 700;
+    padding-top: 8px;
+}
+
+.pricing__amount {
+    font-size: var(--text-3xl);
+    font-weight: 800;
+}
+
+.pricing__payment-info {
+    font-size: var(--text-xs);
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.pricing__cta {
+    width: 100%;
+    justify-content: center;
+}
+
+.pricing__seals {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.pricing__seal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--text-xs);
+    opacity: 0.85;
+    text-align: center;
+    flex: 1;
+}
+
+.pricing__seal img {
+    width: 24px;
+    height: 24px;
+}
