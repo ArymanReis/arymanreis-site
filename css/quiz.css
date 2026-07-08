@@ -290,10 +290,10 @@
     flex-shrink: 0;
 }
 
-.quiz-page .faq__icon--open { display: none; }
+.quiz-page .faq__icon--closed { display: none; }
 
-.quiz-page .faq__item.active .faq__icon--closed { display: none; }
-.quiz-page .faq__item.active .faq__icon--open  { display: block; }
+.quiz-page .faq__item.active .faq__icon--open   { display: none; }
+.quiz-page .faq__item.active .faq__icon--closed { display: block; }
 
 .quiz-page .faq__answer-wrapper {
     max-height: 0;
