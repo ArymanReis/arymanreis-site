@@ -296,13 +296,9 @@
 .quiz-page .faq__item.active .faq__icon--closed { display: block; }
 
 .quiz-page .faq__answer-wrapper {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
-}
-
-.quiz-page .faq__item.active .faq__answer-wrapper {
-    max-height: 400px;
+    transition: height 0.35s ease;
 }
 
 .quiz-page .faq__item.active .faq__question {
