@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Meta Básico -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Aryman Reis | A história que todo Sub-Gerente precisa ouvir</title>
+
+    <meta name="description"
+        content="Estou vibrando de te ver aqui, Sub-Gerente. Admiro demais quem já está um passo à frente — porque eu fui você.">
+
+    <meta name="author" content="Aryman Reis">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/icon-aryman.ico" type="image/x-icon">
+
+    <!-- CSS compartilhado -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- CSS exclusivo desta página -->
+    <link rel="stylesheet" href="./css/historia.css">
+    <link rel="stylesheet" href="./css/historia-responsive.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJQT0X3ZKF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DJQT0X3ZKF');
+    </script>
+
+    <!-- Hooks para pixels (configuração futura) -->
+    <!-- Google Ads Pixel: inserir aqui -->
+    <!-- Facebook Pixel: inserir aqui -->
+
+    <script src="./js/analytics.js" defer></script>
+    <script src="./js/historia.js" defer></script>
+
+</head>
+
+<body class="historia-page">
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+
+            <a href="index.html" class="header__logo">
+                <img src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- ==========================================
+     HISTÓRIA
+========================================== -->
+<section class="historia">
+    <div class="container">
+        <div class="historia__content">
+
+            <p class="historia__subtitle">Antes de você me chamar, deixa eu te contar o resto dessa história.</p>
+
+            <div class="historia__card">
+
+                <!-- Parte 1 — visível ao carregar -->
+                <div class="historia__body">
+
+                    <p>Estou vibrando de te ver aqui, Sub-Gerente.</p>
+
+                    <p>Admiro demais quem já está um passo à frente — <strong>porque eu fui você.</strong></p>
+
+                    <p>Quando eu era subgerente, tinha essa sede de crescer. Sabia que a vida tinha mais pra mim, e que conhecimento era a única trilha possível.</p>
+
+                    <p>Lembro como se fosse hoje minha primeira promoção — de vendedor a subgerente. Eu já era <strong>braço direito da gerente</strong> em tudo: não pensava só na minha venda, pensava na operação inteira — as vendas dos meus colegas, a organização da loja.</p>
+
+                    <p>Nos tempos vagos, eu lia. Escondido na escada que dava pro estoque. Não tinha YouTube na minha época — era livro de liderança e revista Você S/A, Pequenas Empresas Grandes Negócios.</p>
+
+                    <p>Só que tinha um problema: <strong>quando eu fazia o trabalho do gerente, parecia que era ele quem levava a vantagem.</strong> Eu resolvia. Ele recebia o crédito. Eu não sabia — mas estava sendo observado o tempo todo.</p>
+
+                    <p>Foi numa dessas buscas por conhecimento que encontrei o Excel e os números. Ali achei meu diferencial: <strong>vontade de vencer + gestão de números e equipe.</strong></p>
+
+                </div>
+
+                <!-- Gatilho "continuar lendo" -->
+                <button class="historia__read-more" id="historiaReadMore">
+                    continuar lendo...
+                </button>
+
+                <!-- Parte 2 — oculta até o clique -->
+                <div class="historia__part--2" id="historiaPart2">
+                    <div class="historia__body">
+
+                        <p>Assim que surgiu a oportunidade, <strong>meu nome foi citado.</strong> Virei gerente. Foi inquestionável — porque eu já tinha me preparado pro cargo antes de qualquer vaga abrir. Mantive esperança e disciplina. Sabia que ia dar certo. <strong>E deu.</strong></p>
+
+                        <p>O que pra mim era livro escondido na escada do estoque, hoje é tecnologia, dado e IA — na palma da sua mão, sem precisar esperar alguém te ensinar.</p>
+
+                        <p><strong>Você já está fazendo o trabalho de gerente sem o cargo? Me conta onde você está travado agora.</strong></p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a
+                href="https://api.whatsapp.com/send/?phone=5521979690297&text=Oi+Aryman%2C+vi+seu+site+e+quero+te+contar+onde+estou+travado+como+subgerente.&type=phone_number&app_absent=0"
+                class="historia__cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="trackWhatsApp('historia_subgerente_cta')">
+                Falar com Aryman agora
+                <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+            </a>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+
+            <img class="footer__logo" src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+
+            <div class="footer__links">
+                <a href="pages/privacidade.html">Políticas de Privacidade</a>
+                <a href="pages/termos.html">Termos de Uso</a>
+                <a href="#">Método LPE</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.instagram.com/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'instagram_click')">
+                    <img src="./assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@arymanreis" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'youtube_click')">
+                    <img src="./assets/icons/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/in/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click')">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <span>@arymanreis</span>
+            </div>
+
+            <p class="footer__copyright">© 2026 Aryman Reis. Todos os direitos reservados.</p>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

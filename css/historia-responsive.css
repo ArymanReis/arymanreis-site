@@ -1,0 +1,97 @@
+/* ==================================================
+   RESPONSIVIDADE — Páginas de história (historia-*.html)
+   Mobile-first. Mesmos breakpoints do projeto.
+================================================== */
+
+/* ==================================================
+   ≥ 375px
+================================================== */
+@media (min-width: 375px) {
+
+    .historia__subtitle,
+    .historia__body p,
+    .historia__read-more,
+    .historia__cta {
+        font-size: 15px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 414px
+================================================== */
+@media (min-width: 414px) {
+
+    .historia__subtitle {
+        font-size: 16px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 768px — Tablet
+================================================== */
+@media (min-width: 768px) {
+
+    .container { padding-inline: 40px; }
+
+    .historia-page main { gap: 120px; }
+
+    .historia__content { gap: 60px; }
+
+    .historia__subtitle,
+    .historia__body p,
+    .historia__read-more,
+    .historia__cta {
+        font-size: 16px;
+    }
+
+    .historia__body p {
+        line-height: 28px;
+    }
+
+    .historia__cta {
+        max-width: 400px;
+        align-self: center;
+    }
+
+    .footer { padding: 40px; }
+
+}
+
+/* ==================================================
+   ≥ 1024px — Desktop
+================================================== */
+@media (min-width: 1024px) {
+
+    .container { padding-inline: 120px; }
+
+    .historia__subtitle,
+    .historia__body p,
+    .historia__read-more,
+    .historia__cta {
+        font-size: 18px;
+    }
+
+    .historia__body p {
+        line-height: 32px;
+    }
+
+    .historia__cta {
+        height: auto;
+        padding: 16px 40px;
+        width: auto;
+    }
+
+    .footer { padding: 40px 0; }
+
+}
+
+/* ==================================================
+   ≥ 1280px — Wide Desktop
+================================================== */
+@media (min-width: 1280px) {
+
+    .container { max-width: 1280px; }
+
+}

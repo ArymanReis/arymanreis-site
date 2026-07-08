@@ -8,515 +8,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title>Aryman Reis | Gerente de Loja que Gere Equipe com Dado</title>
+    <title>Aryman Reis | Você é Gerente, Sub-Gerente ou Vendedor Responsável?</title>
 
     <meta name="description"
-        content="Passei anos no varejo de moda. Aprendi que a maioria das decisões sobre time é tomada no achismo. Hoje trabalho com dados para mudar isso.">
+        content="Responda uma pergunta e receba o conteúdo certo para o seu momento como líder no varejo de moda.">
 
     <meta name="keywords"
-        content="gerente de loja, varejo de moda, gestão de equipe, dado, planilha, performance de time">
+        content="gerente de loja, sub-gerente, vendedor responsável, varejo de moda, liderança com dados">
 
-    <meta name="author" content="Aryman">
+    <meta name="author" content="Aryman Reis">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/icon-aryman.ico" type="image/x-icon">
 
-    <link rel="shortcut icon" href="assets/icons/icon-aryman.ico" type="image/x-icon">
+    <!-- CSS compartilhado -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- CSS exclusivo desta página -->
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="./css/quiz-responsive.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJQT0X3ZKF"></script>
-
     <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-DJQT0X3ZKF');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DJQT0X3ZKF');
     </script>
 
-    <!-- Eventos personalizados -->
+    <!-- Hooks para pixels (configuração futura) -->
+    <!-- Google Ads Pixel: inserir aqui -->
+    <!-- Facebook Pixel: inserir aqui -->
 
     <script src="./js/analytics.js" defer></script>
     <script src="./js/faq.js" defer></script>
+    <script src="./js/quiz.js" defer></script>
 
 </head>
 
-<body>
-
-    <!-- ==========================================
-         HEADER
-    ========================================== -->
-
-    <header class="header">
-
-        <div class="container">
-
-            <div class="header__content">
-
-                <a href="#" class="header__logo">
-
-                    <img
-                        src="./assets/icons/logo-aryman-reis.svg"
-                        alt="Aryman">
-
-                </a>
-
-                <a href="https://wa.me/5521979690297?text=Oi%20Aryman%2C%20vi%20seu%20site%20e%20quero%20te%20contar%20meu%20maior%20desafio%20como%20gerente%20de%20loja."
-                class="header__cta"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackWhatsApp('navbar')">
-
-                    Me conta seu maior desafio
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-    <!-- ==========================================
-         MAIN
-    ========================================== -->
-
-    <main>
-
-        <!-- ==========================================
-             HERO
-        ========================================== -->
-
-        <section class="hero">
-
-            <div class="container">
-
-                <div class="hero__content">
-
-                    <h1 class="hero__title">
-                        Gerente de loja que gere equipe
-                        <br>
-                        com dado, não com achismo.
-                    </h1>
-
-                    <p class="hero__description">
-                        Passei anos no varejo de moda. Aprendi que a maioria das decisões sobre time —
-                        quem reconhecer, quem cobrar, quem manter —
-                        é tomada no <strong>achismo</strong>.
-                        Hoje trabalho com dados para mudar isso.
-                        <br><br>
-                        Mas antes de qualquer coisa, quero entender o que está pesando pra você agora.
-                    </p>
-
-                    <div class="hero__card">
-
-                        <div class="hero__card-item">
-
-                            <p class="hero__card-title">
-                                Dado, não achismo.
-                            </p>
-
-                            <p class="hero__label">
-                                Para gerente de loja do varejo de moda.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <p class="hero__vip-text">
-                        Quem entrar na lista recebe antes de todo mundo —
-                        e paga <strong>menos</strong>.
-                    </p>
-
-                    <a
-                        href="https://wa.me/5521979690297?text=Oi%20Aryman%2C%20vi%20seu%20site%20e%20quero%20te%20contar%20meu%20maior%20desafio%20como%20gerente%20de%20loja."
-                        class="btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onclick="trackWhatsApp('hero')">
-
-                        <span>Me conta seu maior desafio</span>
-
-                        <img
-                            src="./assets/icons/arrow.svg"
-                            alt=""
-                            class="btn__icon"
-                            aria-hidden="true">
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
+<body class="quiz-page">
 
 <!-- ==========================================
-     STORY
+     HEADER
 ========================================== -->
-
-<section class="story">
-
+<header class="header">
     <div class="container">
+        <div class="header__content">
 
-        <div class="story__content">
+            <a href="#" class="header__logo">
+                <img src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+            </a>
 
-            <h2 class="story__title">
-                Fui promovido sem preparo.
-            </h2>
+        </div>
+    </div>
+</header>
 
-            <p class="story__subtitle">
-                E demorei para entender o que estava faltando.
-            </p>
+<main>
 
-            <div class="story__card">
+<!-- ==========================================
+     QUIZ
+========================================== -->
+<section class="quiz" id="quiz">
+    <div class="container">
+        <div class="quiz__content">
 
-                <p class="story__text">
-                    Quando virei supervisor de vendas no varejo de moda, achei que sabia o que estava fazendo.
-                </p>
+            <p class="quiz__greeting" id="quiz-greeting">Olá, Gerente de loja, beleza! 👋</p>
 
-                <p class="story__text">
-                    Tinha resultado. Tinha experiência. Conhecia o time.
-                </p>
+            <p class="quiz__intro">Você foi promovido por ser o melhor vendedor.<br><br>Só que ninguém te ensinou a liderar.</p>
 
-                <p class="story__emphasis">
-                    Mas quando precisei tomar decisões sobre pessoas —
-                    quem promover, quem cobrar, quem desligar —
-                    percebi que não tinha nada na mão além do que eu achava.
-                </p>
+            <p class="quiz__greeting">Escolha seu cargo abaixo e eu te conto a história de como saí exatamente de onde você está agora.</p>
 
-                <p class="story__text">
-                    Sem critério. Sem número. Sem como provar para ninguém que estava certo.
-                </p>
+            <div class="quiz__card" id="quiz-card">
 
-                <p class="story__text">
-                    Foi aí que entendi o que separava quem avançava de quem ficava parado:
-                </p>
+                <p class="quiz__label">Por favor, me responda!</p>
 
-                <p class="story__emphasis">
-                    Não era esforço, não era dedicação —
-                    era saber transformar o que acontecia na loja em dado utilizável.
-                </p>
+                <p class="quiz__question">Você é?</p>
 
-                <p class="story__text">
-                    Aprendi isso do jeito difícil. Hoje é o que eu faço.
-                </p>
+                <p class="quiz__hint">Selecione uma opção</p>
 
-                <p class="story__text">
-                    E agora quero entender o que está acontecendo na sua loja.
-                </p>
+                <ul class="quiz__options">
+                    <li>
+                        <button class="quiz__option" data-value="gerente">
+                            Gerente
+                        </button>
+                    </li>
+                    <li>
+                        <button class="quiz__option" data-value="sub-gerente">
+                            Sub-Gerente
+                        </button>
+                    </li>
+                    <li>
+                        <button class="quiz__option" data-value="vendedor-responsavel">
+                            Vendedor Responsável
+                        </button>
+                    </li>
+                </ul>
+
+                <button class="quiz__cta" id="quizCta" disabled>
+                    Quero ver
+                    <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+                </button>
 
             </div>
 
         </div>
-
     </div>
+</section>
 
+<!-- ==========================================
+     SOBRE O INSTRUTOR
+========================================== -->
+<section class="quiz-about">
+    <div class="container">
+        <div class="quiz-about__content">
+
+            <h2 class="quiz-about__title">Quem é Aryman Reis</h2>
+
+            <img
+                src="./assets/images/aryman-especialista-em-formacao-lideres-em-analise-de-dados.png"
+                alt="Aryman Reis — Especialista em formação de líderes em análise de dados"
+                class="quiz-about__photo"
+                loading="lazy">
+
+            <div class="quiz-about__body">
+
+                <p>Esposo da Bruna e pai do Abraão. Jesus está em tudo o que faço.</p>
+
+                <p>Já liderei em empresas pequenas, médias e multinacionais — moda, alimentação, indústria automotiva, confecção.</p>
+
+                <p>Não é ostentação de carreira. <strong>É visão macro que poucos especialistas desse mercado têm.</strong></p>
+
+                <p>Numa multinacional, precisei encontrar meu substituto entre 120 pessoas da operação.</p>
+
+                <p>Não encontrei ninguém — nem os mais experientes — que soubesse <strong>liderar com dado na mão.</strong></p>
+
+                <p>Foi ali que entendi: o varejo de moda vive uma escassez real de liderança baseada em dados.</p>
+
+                <p>Ninguém ensina isso pra quem vem da base. <strong>Foi por isso que escolhi capacitar gerentes de loja.</strong></p>
+
+                <p>Hoje uso o que aprendi cruzando setores — tecnologia, dados, IA aplicada à liderança — pra te levar <strong>do nível comum ao nível raro:</strong> aquele gerente que antecipa, decide com segurança, e o supervisor escuta antes de qualquer decisão importante.</p>
+
+                <p>Minha oração é que Deus me dê o dom do ensino, para transformar sua vida através do meu conhecimento. Meu sonho é ter uma escola de tecnologia para líderes — e <strong>melhorar a vida de mil líderes até 2027.</strong> E você já faz parte disso.</p>
+
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- ==========================================
      FAQ
 ========================================== -->
-
 <section class="faq">
-
     <div class="container">
-
         <div class="faq__content">
 
-            <h2 class="faq__title">
-                Perguntas Frequentes
-            </h2>
+            <h2 class="faq__title">FAQ — Perguntas frequentes</h2>
 
             <div class="faq__list">
 
                 <article class="faq__item active">
-
                     <button class="faq__question">
-
-                        <span>
-                            Isso é para gerente de loja mesmo, ou é mais para quem trabalha com TI e análise de dados?
-                        </span>
-
-                        <img
-                            src="./assets/icons/arrow-faq.svg"
-                            alt=""
-                            class="faq__icon">
-
+                        <span>Isso é só mais um quiz querendo meu WhatsApp?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
                     </button>
-
                     <div class="faq__answer-wrapper">
-
                         <div class="faq__answer">
-
-                            <p>
-                                É para gerente de loja. Não para analista, não para consultor, não para estudante de MBA. O que eu faço é pegar o dado que a sua loja já gera — o relatório que o sistema já exporta — e transformar em informação que você consegue usar na segunda-feira de manhã.
-                            </p>
-
+                            <p>Não vou mentir: sim, eu quero seu WhatsApp. Mas não pra te encher de mensagem. É pra te mandar exatamente o conteúdo certo pro seu cargo — sem enrolação, sem 47 e-mails por dia.</p>
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="faq__item">
-
                     <button class="faq__question">
-
-                        <span>
-                            Preciso entender de planilha ou de tecnologia para acompanhar seu conteúdo?
-                        </span>
-
-                        <img
-                            src="./assets/icons/arrow-faq.svg"
-                            alt=""
-                            class="faq__icon">
-
+                        <span>Vou receber spam depois disso?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
                     </button>
-
                     <div class="faq__answer-wrapper">
-
                         <div class="faq__answer">
-
-                            <p>
-                                Não. Se você sabe abrir um arquivo no celular, já chega. O que importa não é a ferramenta — é saber o que olhar e o que fazer com o que você vê. É isso que eu ensino.
-                            </p>
-
+                            <p>Não. Você recebe o que combinamos: conteúdo relevante pro seu momento como líder. Se não servir, você sai quando quiser, sem drama.</p>
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="faq__item">
-
                     <button class="faq__question">
-
-                        <span>
-                            Você já foi gerente de loja?
-                        </span>
-
-                        <img
-                            src="./assets/icons/arrow-faq.svg"
-                            alt=""
-                            class="faq__icon">
-
+                        <span>Isso é venda disfarçada de quiz?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
                     </button>
-
                     <div class="faq__answer-wrapper">
-
                         <div class="faq__answer">
-
-                            <p>
-                                Fui supervisor de vendas no varejo de moda — que é o topo da liderança operacional nesse segmento. Gerenciei equipe, respondi por resultado e tomei decisão sobre time sem ter ferramenta nenhuma na mão. Conheço o problema por dentro, não por teoria.
-                            </p>
-
+                            <p>Direto ao ponto: eu tenho um método, e um dia vou te oferecer ele. Mas primeiro você vai receber valor de verdade, de graça, pra decidir sozinho se faz sentido pra você. Sem letra miúda.</p>
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="faq__item">
-
                     <button class="faq__question">
-
-                        <span>
-                            O que eu ganho seguindo seu conteúdo?
-                        </span>
-
-                        <img
-                            src="./assets/icons/arrow-faq.svg"
-                            alt=""
-                            class="faq__icon">
-
+                        <span>Quanto tempo isso leva?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
                     </button>
-
                     <div class="faq__answer-wrapper">
-
                         <div class="faq__answer">
-
-                            <p>
-                                Critério. Você vai parar de gerir no achismo e começar a ter número para embasar o que você já sente. Quando o regional perguntar sobre sua equipe, você vai saber responder — com dado, não com improviso.
-                            </p>
-
+                            <p>Menos de 1 minuto. Uma pergunta, um clique, e você já está na sua página.</p>
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="faq__item">
-
                     <button class="faq__question">
-
-                        <span>
-                            Trabalho em uma rede pequena, sem sistema sofisticado. Ainda assim serve para mim?
-                        </span>
-
-                        <img
-                            src="./assets/icons/arrow-faq.svg"
-                            alt=""
-                            class="faq__icon">
-
+                        <span>Preciso ser gerente pra continuar?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
                     </button>
-
                     <div class="faq__answer-wrapper">
-
                         <div class="faq__answer">
-
-                            <p>
-                                Serve. A maioria das redes regionais não tem sistema avançado — e é exatamente para esse contexto que eu desenvolvo tudo. Se sua loja exporta qualquer relatório, mesmo que seja um Excel simples, já dá para trabalhar.
-                            </p>
-
+                            <p>Não. Tem caminho pra Gerente, Sub-Gerente e Vendedor Responsável. Cada um recebe o que é relevante pro seu momento — ninguém fica de fora.</p>
                         </div>
-
                     </div>
+                </article>
 
+                <article class="faq__item">
+                    <button class="faq__question">
+                        <span>Meus dados estão seguros?</span>
+                        <img src="./assets/icons/arrow-closed.svg" alt="" class="faq__icon faq__icon--closed" aria-hidden="true">
+                        <img src="./assets/icons/arrow-open.svg" alt="" class="faq__icon faq__icon--open" aria-hidden="true">
+                    </button>
+                    <div class="faq__answer-wrapper">
+                        <div class="faq__answer">
+                            <p>Sim. Seu WhatsApp é usado só por mim, pra conversar com você — nada de venda pra terceiro, nada de lista compartilhada.</p>
+                        </div>
+                    </div>
                 </article>
 
             </div>
 
         </div>
-
     </div>
-
 </section>
 
 <!-- ==========================================
-     CTA FINAL
+     BOTÃO FLUTUANTE
 ========================================== -->
+<div class="quiz-floating">
+    <a href="#quiz-card" class="quiz-floating__btn">
+        Responder agora
+        <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+    </a>
+</div>
 
-<section class="cta-final">
-
-    <div class="container">
-
-        <div class="cta-final__content">
-
-            <h2 class="cta-final__title">
-                Me conta o que está pesando na sua loja agora.
-            </h2>
-
-            <p class="cta-final__description">
-                Não precisa ser um problema grande. Pode ser aquela situação que você não sabe bem como nomear —
-                mas que está lá <strong>todo dia</strong>.
-                <br><br>
-                É exatamente esse tipo de conversa que me interessa.
-            </p>
-
-            <a
-                href="https://wa.me/5521979690297?text=Oi%20Aryman%2C%20quero%20te%20contar%20o%20que%20est%C3%A1%20pesando%20na%20minha%20loja%20agora."
-                class="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                onclick="trackWhatsApp('cta_final')">
-
-                <span>Quero conversar</span>
-
-                <img
-                    src="./assets/icons/arrow.svg"
-                    alt=""
-                    class="btn__icon"
-                    aria-hidden="true">
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+</main>
 
 <!-- ==========================================
      FOOTER
 ========================================== -->
-
 <footer class="footer">
-
     <div class="container">
-
         <div class="footer__content">
 
-            <img
-                class="footer__logo"
-                src="./assets/icons/logo-aryman-reis.svg"
-                alt="Aryman">
+            <img class="footer__logo" src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
 
             <div class="footer__links">
-
-                <a href="pages/privacidade.html">
-                    Políticas de Privacidade
-                </a>
-
-                <a href="pages/termos.html">
-                    Termos de Uso
-                </a>
-
-                <a href="#">
-                    Painel do Líder
-                </a>
-
+                <a href="pages/privacidade.html">Políticas de Privacidade</a>
+                <a href="pages/termos.html">Termos de Uso</a>
             </div>
 
             <div class="footer__social">
+                <a href="https://www.instagram.com/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'instagram_click')">
+                    <img src="./assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@arymanreis" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'youtube_click')">
+                    <img src="./assets/icons/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/in/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click')">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <span>@arymanreis</span>
+            </div>
 
-    <a
-        href="https://www.instagram.com/arymanreis/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="gtag('event', 'instagram_click')">
-
-        <img
-            src="./assets/icons/instagram.svg"
-            alt="Instagram">
-
-    </a>
-
-    <a
-        href="https://www.youtube.com/@arymanreis"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="gtag('event', 'youtube_click')">
-
-        <img
-            src="./assets/icons/youtube.svg"
-            alt="Youtube">
-
-    </a>
-
-    <a
-        href="https://www.linkedin.com/in/arymanreis/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="gtag('event', 'linkedin_click')">
-
-        <img
-            src="./assets/icons/linkedin.svg"
-            alt="LinkedIn">
-
-    </a>
-
-    <span>@arymanreis</span>
-
-</div>
-
-
-            <p class="footer__copyright">
-                © 2026 Aryman Reis. Todos os direitos reservados.
-            </p>
+            <p class="footer__copyright">© 2026 Aryman Reis. Todos os direitos reservados.</p>
 
         </div>
-
     </div>
-
 </footer>
 
-    </main>
-
 </body>
-
 </html>

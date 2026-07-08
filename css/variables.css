@@ -23,6 +23,20 @@
 
     --color-white: #FBF8FC;
 
+    /* Quiz / index page */
+    --color-bg-quiz: #2B2B31;
+
+    /* Páginas de história */
+    --color-bg-historia: #2B2B31;
+
+    --color-text-muted: #C3C3C5;
+
+    --color-card-bg: rgba(251, 248, 252, 0.20);
+
+    --color-border: rgba(251, 248, 252, 0.50);
+
+    --color-border-header: #212128;
+
     /* ==========================
        TIPOGRAFIA
     ========================== */

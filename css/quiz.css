@@ -1,0 +1,398 @@
+/* ==================================================
+   QUIZ — Página inicial (index.html)
+   Compartilhados: header.css, footer.css
+================================================== */
+
+/* --------------------------------------------------
+   HEADER — fundo escuro com borda inferior
+-------------------------------------------------- */
+.quiz-page .header {
+    background: var(--color-bg-quiz);
+    border-bottom: 1px solid var(--color-border-header);
+}
+
+.quiz-page .header__cta { display: none; }
+
+/* --------------------------------------------------
+   MAIN — gap entre seções
+-------------------------------------------------- */
+.quiz-page main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 0;
+    width: 100%;
+    background: var(--color-bg-quiz);
+}
+
+/* --------------------------------------------------
+   SEÇÃO QUIZ
+-------------------------------------------------- */
+.quiz {
+    width: 100%;
+}
+
+.quiz__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.quiz__greeting {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+}
+
+.quiz__intro {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    align-self: stretch;
+}
+
+/* Card de pergunta */
+.quiz__card {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    box-sizing: border-box;
+}
+
+.quiz__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.quiz__question {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.quiz__hint {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Lista de opções */
+.quiz__options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz__options li { margin: 0; }
+
+.quiz__option {
+    width: 100%;
+    height: 37px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.quiz__option--selected {
+    background: linear-gradient(218deg, #C5C5C7 13.21%, #97979A 42.1%, #4D4DFF 83.54%);
+    border: 1px solid rgba(251, 248, 252, 0.50);
+}
+
+/* CTA do quiz */
+.quiz__cta {
+    width: 100%;
+    height: 49px;
+    padding: 16px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    cursor: not-allowed;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.quiz__cta:not([disabled]) {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.quiz__cta .btn__icon {
+    width: 10px;
+    height: auto;
+}
+
+/* --------------------------------------------------
+   SEÇÃO SOBRE O INSTRUTOR
+-------------------------------------------------- */
+.quiz-about {
+    width: 100%;
+}
+
+.quiz-about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.quiz-about__title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+}
+
+.quiz-about__photo {
+    width: 263px;
+    height: auto;
+    display: block;
+}
+
+.quiz-about__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.quiz-about__body p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: left;
+    line-height: normal;
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   SEÇÃO FAQ — overrides da versão quiz
+-------------------------------------------------- */
+.quiz-page .faq {
+    width: 100%;
+}
+
+.quiz-page .faq__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.quiz-page .faq__title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--color-white);
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+}
+
+.quiz-page .faq__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-page .faq__item {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 5px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-white);
+    backdrop-filter: blur(50px);
+    box-sizing: border-box;
+}
+
+.quiz-page .faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-primary);
+}
+
+.quiz-page .faq__question span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+    line-height: normal;
+    flex: 1;
+}
+
+/* Ícones FAQ — troca closed/open conforme estado */
+.quiz-page .faq__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.quiz-page .faq__icon--open { display: none; }
+
+.quiz-page .faq__item.active .faq__icon--closed { display: none; }
+.quiz-page .faq__item.active .faq__icon--open  { display: block; }
+
+.quiz-page .faq__answer-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.quiz-page .faq__item.active .faq__answer-wrapper {
+    max-height: 400px;
+}
+
+.quiz-page .faq__item.active .faq__question {
+    padding-bottom: 20px;
+}
+
+.quiz-page .faq__answer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: left;
+    line-height: normal;
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   BOTÃO FLUTUANTE (entre FAQ e Footer)
+-------------------------------------------------- */
+.quiz-floating {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.quiz-floating__btn {
+    width: 100%;
+    max-width: 260px;
+    height: 49px;
+    padding: 16px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quiz-floating__btn .btn__icon {
+    width: 10px;
+    height: auto;
+}
+
+/* --------------------------------------------------
+   HOVER — opções, CTA e botão flutuante
+-------------------------------------------------- */
+.quiz__option:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.quiz__option:active {
+    transform: translateY(0);
+}
+
+.quiz__cta:not([disabled]):hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.quiz__cta:not([disabled]):active {
+    transform: translateY(0);
+}
+
+.quiz__cta:not([disabled]):hover .btn__icon {
+    transform: translateX(4px);
+}
+
+.quiz-floating__btn {
+    transition: all 0.3s ease;
+}
+
+.quiz-floating__btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.quiz-floating__btn:active {
+    transform: translateY(0);
+}
+
+.quiz-floating__btn:hover .btn__icon {
+    transform: translateX(4px);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.quiz-page .footer {
+    width: 100%;
+}

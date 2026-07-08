@@ -1,0 +1,142 @@
+/* ==================================================
+   RESPONSIVIDADE — Quiz (index.html)
+   Mobile-first. Mesmos breakpoints do projeto.
+================================================== */
+
+/* ==================================================
+   ≥ 375px
+================================================== */
+@media (min-width: 375px) {
+
+    .quiz__greeting,
+    .quiz__intro,
+    .quiz__label,
+    .quiz-about__body p,
+    .quiz-page .faq__question span,
+    .quiz-page .faq__answer p {
+        font-size: 15px;
+    }
+
+    .quiz__question,
+    .quiz-about__title,
+    .quiz-page .faq__title {
+        font-size: 17px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 414px
+================================================== */
+@media (min-width: 414px) {
+
+    .quiz__question,
+    .quiz-about__title,
+    .quiz-page .faq__title {
+        font-size: 18px;
+    }
+
+}
+
+/* ==================================================
+   ≥ 768px — Tablet
+================================================== */
+@media (min-width: 768px) {
+
+    .container { padding-inline: 40px; }
+
+    .quiz-page main { gap: 120px; }
+
+    .quiz__content,
+    .quiz-about__content,
+    .quiz-page .faq__content {
+        gap: 60px;
+    }
+
+    .quiz__greeting,
+    .quiz__intro,
+    .quiz__label,
+    .quiz-about__body p,
+    .quiz-page .faq__question span,
+    .quiz-page .faq__answer p {
+        font-size: 16px;
+    }
+
+    .quiz__question {
+        font-size: 20px;
+    }
+
+    .quiz-about__title,
+    .quiz-page .faq__title {
+        font-size: 20px;
+    }
+
+    .quiz__option,
+    .quiz__cta,
+    .quiz-floating__btn {
+        font-size: 16px;
+    }
+
+    .quiz-about__photo {
+        width: 360px;
+    }
+
+    .footer { padding: 40px; }
+
+}
+
+/* ==================================================
+   ≥ 1024px — Desktop
+================================================== */
+@media (min-width: 1024px) {
+
+    .container { padding-inline: 120px; }
+
+    .quiz__greeting,
+    .quiz__intro,
+    .quiz__label,
+    .quiz-about__body p,
+    .quiz-page .faq__question span,
+    .quiz-page .faq__answer p {
+        font-size: 18px;
+    }
+
+    .quiz__question {
+        font-size: 24px;
+    }
+
+    .quiz-about__title,
+    .quiz-page .faq__title {
+        font-size: 24px;
+    }
+
+    .quiz__option,
+    .quiz__cta,
+    .quiz-floating__btn {
+        font-size: 18px;
+        height: auto;
+        padding: 14px 20px;
+    }
+
+    .quiz__option { height: auto; }
+
+    .quiz-about__photo {
+        width: 420px;
+    }
+
+    .footer { padding: 40px 0; }
+
+}
+
+/* ==================================================
+   ≥ 1280px — Wide Desktop
+================================================== */
+@media (min-width: 1280px) {
+
+    .container { max-width: 1280px; }
+
+    .quiz-about__photo {
+        width: 467px;
+    }
+
+}
