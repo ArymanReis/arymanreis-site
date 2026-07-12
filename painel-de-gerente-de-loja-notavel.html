@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Meta Básico -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Painel do Gerente Notável — Planilha IPH + Kit IA | Aryman Reis</title>
+
+    <meta name="description"
+        content="Planilha de gestão de equipe com IPH automático + 7 prompts de IA prontos. Em 30 minutos você sabe quem produz e está pronto pra qualquer pergunta do supervisor.">
+
+    <meta name="author" content="Aryman Reis">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/icon-aryman.ico" type="image/x-icon">
+
+    <!-- CSS compartilhado -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/story.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/cta.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- CSS LP existente (reaproveitado) -->
+    <link rel="stylesheet" href="./css/lp-overrides.css">
+    <link rel="stylesheet" href="./css/lp-hero.css">
+    <link rel="stylesheet" href="./css/lp-problem.css">
+    <link rel="stylesheet" href="./css/lp-method.css">
+    <link rel="stylesheet" href="./css/lp-modules.css">
+    <link rel="stylesheet" href="./css/lp-bonus.css">
+    <link rel="stylesheet" href="./css/lp-audience.css">
+    <link rel="stylesheet" href="./css/lp-pricing.css">
+    <link rel="stylesheet" href="./css/lp-guarantee.css">
+    <link rel="stylesheet" href="./css/lp-about.css">
+    <link rel="stylesheet" href="./css/lp-responsive.css">
+
+    <!-- CSS exclusivo desta página -->
+    <link rel="stylesheet" href="./css/pg-animation.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJQT0X3ZKF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DJQT0X3ZKF');
+    </script>
+
+    <!-- Hooks para pixels (configuração futura) -->
+    <!-- Google Ads Pixel: inserir aqui -->
+    <!-- Facebook Pixel: inserir aqui -->
+
+    <script src="./js/analytics.js" defer></script>
+    <script src="./js/faq.js" defer></script>
+    <script src="./js/painel-gerente.js" defer></script>
+
+</head>
+
+<body class="painel-page">
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+
+            <a href="#" class="header__logo">
+                <img src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ==========================================
+         HERO
+    ========================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+
+                <p class="hero__eyebrow" id="pg-greeting">Bom dia! Gerente de loja. &#128075;</p>
+
+                <h1 class="hero__title">
+                    Pare de ser só mais um gerente comum. Em <span class="hero__highlight">30 minutos</span>, com dado na mão, você está pronto pra qualquer pergunta do supervisor &mdash; e vira um gerente notável.
+                </h1>
+
+                <!-- ==========================================
+                     ANIMAÇÃO — Gerente Comum → Notável
+                ========================================== -->
+                <div class="anim-gerente" role="img" aria-label="De Gerente Comum a Gerente Notável">
+                    <div class="anim-gerente__glass" aria-hidden="true"></div>
+                    <div class="anim-gerente__comum" aria-hidden="true">
+                        <img src="./assets/logos/gerente-comum.svg" alt="">
+                    </div>
+                    <div class="anim-gerente__notavel-behind" aria-hidden="true">
+                        <img src="./assets/logos/gerente-notavel.svg" alt="">
+                    </div>
+                    <div class="anim-gerente__notavel-front" aria-hidden="true">
+                        <img src="./assets/logos/gerente-notavel.svg" alt="">
+                    </div>
+                </div>
+
+                <p class="hero__description">
+                    Sua planilha de gestão de equipe + kit de prompts de IA, prontos pra <strong>usar ainda hoje</strong> &mdash; sem curso longo, sem enrolação.
+                </p>
+
+                <div class="hero__vsl">
+                    <iframe
+                        src="https://www.youtube.com/embed/qTllhlo-nHU"
+                        title="Painel do Gerente Notável — Aryman Reis"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <a class="btn" href="#checkout" onclick="trackCheckout('hero')">
+                    <span class="btn__text--short">Painel do Gerente agora</span>
+                    <span class="btn__text--long">Quero o Painel do Gerente agora</span>
+                    <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DOR / PROBLEMA
+    ========================================== -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem__content">
+
+                <h2 class="problem__title">Você lidera uma equipe. Mas sabe, de verdade, quem está entregando resultado?</h2>
+
+                <p class="problem__body">Se a resposta foi <strong>&ldquo;mais ou menos&rdquo;</strong> ou <strong>&ldquo;eu acho que sim&rdquo;</strong> &mdash; você não está sozinho.</p>
+
+                <p class="problem__body">A maioria dos gerentes toma decisões no achismo:</p>
+
+                <ul class="problem__list">
+                    <li class="problem__list-item">Não sabe quem vende mais por mérito e quem só está no turno certo</li>
+                    <li class="problem__list-item">Não consegue explicar pro supervisor por que decidiu manter ou demitir alguém</li>
+                    <li class="problem__list-item">Trava quando o supervisor pergunta os números de cabeça</li>
+                    <li class="problem__list-item">Sente que apaga incêndio o dia inteiro &mdash; e nunca sobra tempo pra liderar de verdade</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DESTAQUE / CALLOUT
+    ========================================== -->
+    <aside class="callout">
+        <div class="container">
+            <p class="callout__text">Gerentes de loja não deixam de crescer por falta de competência.<br><br>Deixam de crescer porque <strong>não conseguem transformar dados em decisões.</strong></p>
+        </div>
+    </aside>
+
+    <!-- ==========================================
+         HISTÓRIA
+    ========================================== -->
+    <section class="story">
+        <div class="container">
+            <div class="story__content">
+
+                <p class="story__subtitle">Uma acontecimento e conversa que nunca esqueci.</p>
+
+                <div class="story__card">
+
+                    <!-- Parte 1 — visível ao carregar -->
+                    <p class="story__text">Os vendedores saíram comemorando <strong>no corredor do shopping, abraçados.</strong></p>
+                    <p class="story__text">O dono da empresa via tudo <strong>pela vitrine.</strong></p>
+                    <p class="story__text"><strong>Sete meses antes</strong>, essa era a pior loja da rede.</p>
+                    <p class="story__text">Eu era o supervisor. Todo mês, o concorrente do lado batia mais meta que a gente. Sempre. <strong>Eu olhava os números</strong> e não entendia o que estava errado. O gerente tinha experiência. O time não era ruim. A loja era boa.</p>
+                    <p class="story__text">Alguma coisa não fechava.</p>
+                    <p class="story__text">Decidi entrar fundo. Auditoria, conversa individual com cada vendedor, estoque, produto, presença, consistência.</p>
+                    <p class="story__text">O que encontrei não estava no relatório de vendas. Estava nos dados que ninguém olhava &mdash; nos <strong>dados comportamentais.</strong></p>
+                    <p class="story__text"><strong>Tomei decisões difíceis. Troquei o gerente. Movi pessoas. Reforcei o time.</strong> E passei a acompanhar o que os números diziam &mdash; não o que eu achava que estava acontecendo.</p>
+                    <p class="story__text">Em dezembro, sete meses depois, essa loja bateu <strong>R$900 mil em vendas no mês.</strong></p>
+                    <p class="story__text">Eu não sabia se estava fazendo a coisa certa porque não tinha critério.</p>
+                    <p class="story__text"><strong>Dado é critério.</strong> Sem ele, você gerencia no achismo &mdash; e o achismo te expõe na hora que mais importa.</p>
+                    <p class="story__text">Aquela loja foi meu primeiro raio-x sobre liderança e dado. Não foi o último.</p>
+                    <p class="story__text">Minha carreira ainda ia me levar pra fora da moda &mdash; pra alimentação, indústria automotiva, meu próprio negócio, e por fim, uma multinacional.</p>
+                    <p class="story__text"><strong>E o que eu vi ali dentro daquela loja, eu ia ver de novo &mdash; numa escala bem maior.</strong></p>
+
+                    <!-- Gatilho "continuar lendo" -->
+                    <button class="story__read-more" id="pgReadMore">
+                        continuar lendo...
+                    </button>
+
+                    <!-- Parte 2 — oculta até o clique -->
+                    <div class="story__part--2" id="pgPart2">
+                        <p class="story__text">Anos depois daquela loja, eu já não estava mais na moda.</p>
+                        <p class="story__text">Estava numa multinacional, liderando uma operação bem maior.</p>
+                        <p class="story__text">Um dia, precisei substituir alguém da minha equipe. Fui buscar entre <strong>120 pessoas</strong> da operação.</p>
+                        <p class="story__text">Não achei ninguém &mdash; nem os mais experientes &mdash; que soubesse liderar com dado na mão.</p>
+                        <p class="story__text">A mesma coisa que eu tinha visto naquela loja de moda, anos antes, se repetia numa escala dez vezes maior: <strong>quem tem resultado nem sempre é quem é promovido. É quem consegue mostrar o resultado com dado.</strong></p>
+                        <p class="story__text">Vi profissional bom ficar parado enquanto a vaga era preenchida por alguém de fora &mdash; só porque ninguém ali sabia transformar número em decisão.</p>
+                        <p class="story__text">Foi ali que decidi: ia usar tudo o que aprendi cruzando moda, alimentação, indústria automotiva e meu próprio negócio pra ensinar isso pra quem começou onde eu comecei &mdash; no chão de loja.</p>
+                        <p class="story__text">Você não precisa esperar a próxima vaga passar na sua frente pra descobrir, tarde demais, que faltava isso pra você.</p>
+                        <p class="story__text"><strong>Foi assim que nasceu o Painel do Gerente:</strong> a planilha e o kit de IA que colocam na sua mão o mesmo critério que separou quem foi promovido de quem ficou parado.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CTA INTERMEDIÁRIO
+    ========================================== -->
+    <div class="cta-mid">
+        <div class="container">
+            <a class="btn" href="#checkout" onclick="trackCheckout('story_cta')">
+                <span class="btn__text--short">Painel do Gerente agora</span>
+                <span class="btn__text--long">Quero o Painel do Gerente agora</span>
+                <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+            </a>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MÉTODO / IPH
+    ========================================== -->
+    <section class="method">
+        <div class="container">
+            <div class="method__content">
+
+                <h2 class="method__title">Sua planilha já vem pronta. E com um índice que nenhum concorrente usa: o IPH.</h2>
+
+                <div class="method__intro">
+                    <p class="method__body">A maioria dos rankings de loja só olha pra um número: quanto o vendedor vendeu.</p>
+                    <p class="method__body">Isso é injusto e incompleto &mdash; ignora quem falta, quem atrasa, quem está sempre presente segurando a loja mesmo sem ser o que mais vende.</p>
+                </div>
+
+                <p class="method__label"><strong>O IPH enxerga o vendedor inteiro, não só a máquina de bater meta:</strong></p>
+
+                <ul class="method__iph">
+                    <li class="method__iph-item"><strong>70% resultado comercial</strong> &mdash; quanto ele vendeu perto da meta</li>
+                    <li class="method__iph-item"><strong>30% disciplina</strong> &mdash; presença e pontualidade, o que nenhum outro painel mede</li>
+                </ul>
+
+                <p class="method__label">3 etapas simples:</p>
+
+                <ol class="method__steps">
+                    <li class="method__step">
+                        <span class="method__step-num">01</span>
+                        <p class="method__step-text">Cadastre sua equipe e as metas &mdash; uma vez só, atualiza tudo</p>
+                    </li>
+                    <li class="method__step">
+                        <span class="method__step-num">02</span>
+                        <p class="method__step-text">Cole os dados do seu PDV e marque presença &mdash; toda semana</p>
+                    </li>
+                    <li class="method__step">
+                        <span class="method__step-num">03</span>
+                        <p class="method__step-text">Veja o <strong>IPH calcular sozinho</strong> &mdash; comercial e comportamental juntos, sem você fazer conta nenhuma</p>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         O QUE VOCÊ RECEBE
+    ========================================== -->
+    <section class="modules">
+        <div class="container">
+            <div class="modules__content">
+
+                <h2 class="modules__title">O que você recebe</h2>
+
+                <div class="modules__list">
+                    <article class="modules__item">
+                        <p class="modules__item-title">Vídeo ensinando a usar o <strong>PAINEL DO GERENTE.</strong></p>
+                        <p class="modules__item-desc">Direto ao ponto: você assiste uma vez, aplica na mesma semana. Sem série de aulas, sem enrolação &mdash; é o tempo de um intervalo.</p>
+                    </article>
+                    <article class="modules__item">
+                        <p class="modules__item-title">Kit IA do Gerente</p>
+                        <p class="modules__item-desc">7 prompts prontos. Você tira print do painel, cola no ChatGPT, e recebe o roteiro pronto em menos de 2 minutos &mdash; reunião com vendedor, feedback, dinâmica de grupo, desafio de vendas.</p>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DENTRO DO KIT IA (Bônus)
+    ========================================== -->
+    <section class="bonus">
+        <div class="container">
+            <div class="bonus__content">
+
+                <h2 class="bonus__title">Dentro do <span class="bonus__highlight">Kit IA</span> do Gerente</h2>
+
+                <div class="bonus__card">
+                    <p class="bonus__item-title">7 prompts prontos para qualquer situação da sua semana:</p>
+                    <ol class="bonus__list">
+                        <li class="bonus__list-item">Análise geral do painel &mdash; pra abrir a semana ou preparar a reunião com o supervisor</li>
+                        <li class="bonus__list-item">Reunião 1:1 com vendedor abaixo da meta</li>
+                        <li class="bonus__list-item">Reunião 1:1 com vendedor acima da meta &mdash; reconhecimento com dado, não elogio vazio</li>
+                        <li class="bonus__list-item">Reunião geral do time &mdash; pauta pronta</li>
+                        <li class="bonus__list-item">Dinâmica de grupo pra semana difícil</li>
+                        <li class="bonus__list-item">Desafio de vendas com premiação</li>
+                        <li class="bonus__list-item">Script de feedback baseado no IPH &mdash; 5 minutos, corredor ou fim de turno</li>
+                    </ol>
+                    <p class="bonus__footer"><em>Print do painel + prompt + ChatGPT = roteiro pronto em 2 minutos.</em></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PARA QUEM É / NÃO É
+    ========================================== -->
+    <section class="audience">
+        <div class="container">
+            <div class="audience__content">
+
+                <div class="audience__block">
+                    <h2 class="audience__title">Para quem é:</h2>
+                    <ul class="audience__list audience__list--yes">
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Gerente de loja de moda que lidera equipe de vendedores</li>
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Quem quer chegar preparado na reunião com o supervisor ou regional</li>
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Quem quer se posicionar pra próxima vaga com dado, não com esforço invisível</li>
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Quem ainda não tem nenhuma base organizada e quer começar do zero</li>
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Quem já tem dado solto no PDV mas nunca soube transformar isso em decisão</li>
+                        <li class="audience__item"><img src="./assets/icons/check-open.svg" alt="" class="audience__icon" aria-hidden="true">Quem usa (ou consegue usar) Excel básico.</li>
+                    </ul>
+                </div>
+
+                <div class="audience__block">
+                    <h2 class="audience__title">Para quem não é:</h2>
+                    <ul class="audience__list audience__list--no">
+                        <li class="audience__item"><img src="./assets/icons/check-close.svg" alt="" class="audience__icon" aria-hidden="true">Quem busca curso avançado de programação ou Power BI</li>
+                        <li class="audience__item"><img src="./assets/icons/check-close.svg" alt="" class="audience__icon" aria-hidden="true">Quem não lidera nenhuma equipe atualmente ou não deseja ser líder.</li>
+                        <li class="audience__item"><img src="./assets/icons/check-close.svg" alt="" class="audience__icon" aria-hidden="true">Quem quer só teoria de liderança, sem aplicar em planilha real</li>
+                        <li class="audience__item"><img src="./assets/icons/check-close.svg" alt="" class="audience__icon" aria-hidden="true">Quem não tem interesse em desenvolver o próprio time</li>
+                        <li class="audience__item"><img src="./assets/icons/check-close.svg" alt="" class="audience__icon" aria-hidden="true">Quem só usa Google Sheets e não tem Excel</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         OFERTA / PREÇO
+    ========================================== -->
+    <section class="pricing" id="checkout">
+        <div class="container">
+            <div class="pricing__content">
+
+                <h2 class="pricing__title">Sua vez de liderar com dados começa agora</h2>
+
+                <div class="pricing__card">
+
+                    <div class="pricing__card-header">
+                        <img src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis" class="pricing__logo">
+                        <p class="pricing__package-label">PAINEL DO GERENTE</p>
+                    </div>
+
+                    <p class="pricing__includes-label">O que inclui:</p>
+                    <ul class="pricing__items">
+                        <li class="pricing__include-item">
+                            <img src="./assets/logos/excel.svg" alt="" class="pricing__include-icon" aria-hidden="true">
+                            <span><strong>Planilha Painel do Gerente (Excel)</strong> &mdash; com IPH automático</span>
+                        </li>
+                        <li class="pricing__include-item">
+                            <img src="./assets/logos/video.svg" alt="" class="pricing__include-icon" aria-hidden="true">
+                            <span><strong>Vídeo de demostração</strong></span>
+                        </li>
+                        <li class="pricing__include-item">
+                            <img src="./assets/logos/ai.svg" alt="" class="pricing__include-icon" aria-hidden="true">
+                            <span><strong>Kit IA do Gerente</strong> &mdash; 7 prompts prontos (bônus)</span>
+                        </li>
+                    </ul>
+
+                    <p class="pricing__scarcity">Essa condição é exclusiva pra turma de lançamento &mdash; os <strong>100 primeiros gerentes</strong> que entrarem. Depois disso, o <strong>preço volta ao valor normal.</strong></p>
+
+                    <div class="pricing__price-block">
+                        <p class="pricing__price-old">DE &nbsp;R$ 297,00</p>
+                        <div class="pricing__price-new">
+                            <span class="pricing__currency">R$</span>
+                            <span class="pricing__amount">97,00</span>
+                        </div>
+                        <p class="pricing__payment-info"><strong>12x 10,03</strong> no <strong>Cartão crédito</strong>, Pix ou Boleto</p>
+                    </div>
+
+                    <a class="btn pricing__cta" href="#" target="_blank" rel="noopener" onclick="trackCheckout('pricing')">
+                        <span class="btn__text--short">Painel do Gerente agora</span>
+                        <span class="btn__text--long">Quero o Painel do Gerente agora</span>
+                        <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+                    </a>
+
+                    <div class="pricing__seals">
+                        <span class="pricing__seal">
+                            <img src="./assets/icons/iconoir_card-security.svg" alt="" aria-hidden="true">
+                            Compra Segura
+                        </span>
+                        <span class="pricing__seal">
+                            <img src="./assets/icons/material-symbols_trophy-outline.svg" alt="" aria-hidden="true">
+                            Satisfação Garantida
+                        </span>
+                        <span class="pricing__seal">
+                            <img src="./assets/icons/fluent_access-time-24-regular.svg" alt="" aria-hidden="true">
+                            Acesso Imediato
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         GARANTIA
+    ========================================== -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee__content">
+
+                <h2 class="guarantee__title">Risco zero para você</h2>
+
+                <div class="guarantee__badge" aria-hidden="true">7</div>
+
+                <p class="guarantee__subtitle">Risco Zero: Teste por 7 dias.</p>
+
+                <p class="guarantee__body">Se em até 7 dias você sentir que o curso não é para você, devolvemos 100% do seu investimento. Sem perguntas, sem burocracia.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SOBRE O INSTRUTOR
+    ========================================== -->
+    <section class="about">
+        <div class="container">
+            <div class="about__content">
+
+                <h2 class="about__title">Quem é Aryman Reis</h2>
+
+                <img
+                    src="./assets/images/aryman-especialista-em-formacao-lideres-em-analise-de-dados.png"
+                    alt="Aryman Reis — especialista em formação de líderes em análise de dados"
+                    class="about__photo"
+                    loading="lazy">
+
+                <div class="about__bio">
+                    <p class="about__text">Esposo da Bruna e pai do Abraão. <strong>Jesus está em tudo o que faço.</strong></p>
+                    <p class="about__text">Já liderei em empresas pequenas, médias e multinacionais &mdash; moda, alimentação, indústria automotiva, confecção.</p>
+                    <p class="about__text"><strong>Não é ostentação de carreira. É visão macro que poucos especialistas desse mercado têm.</strong></p>
+                    <p class="about__text">Numa <strong>multinacional</strong>, precisei encontrar meu substituto entre <strong>120 pessoas</strong> da operação.</p>
+                    <p class="about__text">Não encontrei ninguém &mdash; nem os mais experientes &mdash; que soubesse liderar com dado na mão.</p>
+                    <p class="about__text">Foi ali que entendi: <strong>o varejo de moda vive uma escassez real de liderança baseada em dados.</strong></p>
+                    <p class="about__text">Ninguém ensina isso pra quem vem da base. Foi por isso que escolhi capacitar esses líderes.</p>
+                    <p class="about__text">Hoje uso o que aprendi cruzando setores &mdash; <strong>tecnologia, dados, IA aplicada à liderança</strong> &mdash; pra te levar do nível comum ao nível raro: aquele gerente que antecipa, decide com segurança, e o regional escuta antes de qualquer decisão importante.</p>
+                    <p class="about__text"><strong>Minha oração é que Deus me dê o dom do ensino. Meu sonho é ter uma escola de tecnologia para líderes &mdash; e melhorar a vida de mil líderes até 2027.</strong></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ
+    ========================================== -->
+    <section class="faq">
+        <div class="container">
+            <div class="faq__content">
+
+                <h2 class="faq__title">FAQ &mdash; Perguntas frequentes</h2>
+
+                <ul class="faq__list">
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Preciso saber Excel avançado para usar a planilha?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>Avançado, não. Mas você precisa saber o básico &mdash; abrir arquivo, colar dado numa célula, entender o que é uma aba. Se você já usa Excel ou Sheets no dia a dia da loja, mesmo que só pra fazer conta simples, você dá conta. A parte difícil &mdash; o cálculo do IPH &mdash; a planilha já faz sozinha. Você não escreve fórmula nenhuma.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Como recebo o acesso?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>Imediatamente após a confirmação do pagamento, direto na plataforma &mdash; planilha, vídeo demostrativo e Kit IA do Gerente liberados na hora, no seu email.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Por quanto tempo tenho acesso?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>Vitalício. Você usa no seu ritmo, sem prazo de expiração.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>E se eu sentir que não é pra mim?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>7 dias de garantia incondicional. Pede reembolso, devolvemos 100%, sem perguntas.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>E se eu não me adaptar ao método?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>Você tem 7 dias de garantia incondicional. Se sentir que o curso não é para você, basta solicitar o reembolso &mdash; devolvemos 100% do seu investimento, sem perguntas.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Preciso ter uma equipe grande para aplicar o que aprender?</span>
+                            <img src="./assets/icons/arrow-faq.svg" alt="" class="faq__icon" aria-hidden="true">
+                        </button>
+                        <div class="faq__answer-wrapper">
+                            <div class="faq__answer">
+                                <p>Não. Funciona com 2 vendedores ou com 20 &mdash; o que importa é ter dado pra organizar e decisão pra tomar.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CTA FINAL
+    ========================================== -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-final__content">
+
+                <h2 class="cta-final__title">Não espere a próxima oportunidade passar por falta de dados.</h2>
+
+                <p class="cta-final__description">Essa condição é exclusiva pra turma de lançamento &mdash; os <strong>100 primeiros gerentes</strong> que entrarem. Depois disso, o preço volta ao valor normal.</p>
+
+                <a class="btn" href="#" target="_blank" rel="noopener" onclick="trackCheckout('cta_final')">
+                    <span class="btn__text--short">Painel do Gerente agora</span>
+                    <span class="btn__text--long">Quero o Painel do Gerente agora</span>
+                    <img src="./assets/icons/arrow.svg" alt="" class="btn__icon" aria-hidden="true">
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+
+            <img class="footer__logo" src="./assets/icons/logo-aryman-reis.svg" alt="Aryman Reis">
+
+            <div class="footer__links">
+                <a href="pages/privacidade.html">Políticas de Privacidade</a>
+                <a href="pages/termos.html">Termos de Uso</a>
+                <a href="#">Método LPE</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.instagram.com/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'instagram_click')">
+                    <img src="./assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@arymanreis" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'youtube_click')">
+                    <img src="./assets/icons/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/in/arymanreis/" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click')">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <span>@arymanreis</span>
+            </div>
+
+            <p class="footer__copyright">&copy; 2026 Aryman Reis. Todos os direitos reservados.</p>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

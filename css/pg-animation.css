@@ -1,0 +1,437 @@
+/* ==================================================
+   PG-ANIMATION — Painel do Gerente Notável
+   Estilos exclusivos desta landing page.
+   Carregado APÓS lp-responsive.css.
+================================================== */
+
+/* --------------------------------------------------
+   ANIMAÇÃO — Gerente Comum → Gerente Notável
+-------------------------------------------------- */
+.anim-gerente {
+    position: relative;
+    width: 280px;
+    height: 107px;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+}
+
+/* Todas as camadas: preenchem o container */
+.anim-gerente__glass,
+.anim-gerente__comum,
+.anim-gerente__notavel-behind,
+.anim-gerente__notavel-front {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+}
+
+/* Glass — z-index 2, fixo durante toda a animação */
+.anim-gerente__glass {
+    z-index: 2;
+    background: rgba(231, 231, 232, 0.10);
+    border: 1px solid rgba(251, 248, 252, 0.50);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Logos ATRÁS do glass (z-1) → desfocadas pelo backdrop-filter */
+.anim-gerente__comum,
+.anim-gerente__notavel-behind {
+    z-index: 1;
+}
+
+/* Logo notável NA FRENTE do glass (z-3) → nítida */
+.anim-gerente__notavel-front {
+    z-index: 3;
+}
+
+.anim-gerente img {
+    max-width: 88%;
+    height: auto;
+    display: block;
+}
+
+/* --------------------------------------------------
+   KEYFRAMES — loop de 6s
+   0% –33%  gerente-comum visível (atrás do glass, desfocada)
+   33%–42%  cross-fade comum → notavel-behind
+   42%–58%  notavel-behind visível (desfocada, se aproximando)
+   58%–67%  transpasse: notavel-behind → notavel-front + scale
+   67%–92%  notavel-front visível (nítida, na frente do glass)
+   92%–100% fade-out → reset
+-------------------------------------------------- */
+
+@keyframes pg-comum {
+    0%,  33%  { opacity: 1; }
+    42%, 100% { opacity: 0; }
+}
+
+@keyframes pg-notavel-behind {
+    0%,  33%  { opacity: 0; transform: scale(0.92); }
+    42%       { opacity: 1; transform: scale(0.92); }
+    58%       { opacity: 1; transform: scale(0.96); }
+    67%, 100% { opacity: 0; transform: scale(0.96); }
+}
+
+@keyframes pg-notavel-front {
+    0%,  58%  { opacity: 0; transform: scale(0.90); }
+    67%       { opacity: 1; transform: scale(1.03); }
+    76%       { opacity: 1; transform: scale(1.00); }
+    92%       { opacity: 1; transform: scale(1.00); }
+    100%      { opacity: 0; transform: scale(0.98); }
+}
+
+.anim-gerente__comum         { animation: pg-comum          6s ease-in-out infinite; }
+.anim-gerente__notavel-behind { animation: pg-notavel-behind 6s ease-in-out infinite; }
+.anim-gerente__notavel-front  { animation: pg-notavel-front  6s ease-in-out infinite; }
+
+/* --------------------------------------------------
+   STORY — "Continuar lendo" mechanic
+-------------------------------------------------- */
+.story__read-more {
+    display: block;
+    margin-top: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    text-align: left;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.story__read-more:hover { opacity: 1; }
+
+.story__part--2 { display: none; }
+
+.story__part--2.visible {
+    display: block;
+    animation: pg-fadeIn 0.4s ease;
+}
+
+@keyframes pg-fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* --------------------------------------------------
+   CTA INTERMEDIÁRIO (após história)
+-------------------------------------------------- */
+.cta-mid {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+   MÉTODO — lista IPH (novo elemento desta página)
+-------------------------------------------------- */
+.method__iph {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.method__iph-item {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    line-height: 1.6;
+    padding-left: 16px;
+    position: relative;
+}
+
+.method__iph-item::before {
+    content: '\00B7';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* --------------------------------------------------
+   BÔNUS — lista numerada de prompts
+-------------------------------------------------- */
+.bonus__list {
+    margin: 16px 0 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bonus__list-item {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+.bonus__footer {
+    margin-top: 20px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+}
+
+/* --------------------------------------------------
+   PRICING — label "O que inclui:" (novo nesta página)
+-------------------------------------------------- */
+.pricing__includes-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    margin: 0;
+}
+
+/* --------------------------------------------------
+   BACKGROUND — sobrescreve gradiente do base.css
+-------------------------------------------------- */
+.painel-page {
+    background: var(--color-bg-quiz);
+}
+
+.painel-page .header {
+    background: var(--color-bg-quiz);
+    border-bottom: 1px solid var(--color-border-header);
+}
+
+/* --------------------------------------------------
+   HEADER — sem CTA nesta página
+-------------------------------------------------- */
+.header__cta { display: none; }
+
+/* --------------------------------------------------
+   RESPONSIVO — animation badge
+-------------------------------------------------- */
+@media (min-width: 768px) {
+    .anim-gerente {
+        width: 360px;
+        height: 137px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .anim-gerente {
+        width: 420px;
+        height: 160px;
+    }
+}
+
+/* --------------------------------------------------
+   MÓDULOS — centraliza cards (somente 2 itens)
+-------------------------------------------------- */
+.painel-page .modules__item {
+    align-items: center;
+    text-align: center;
+}
+
+/* --------------------------------------------------
+   OFERTA — itens com ícone (logo + texto)
+-------------------------------------------------- */
+.pricing__include-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.pricing__include-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+}
+
+/* ==================================================
+   TIPOGRAFIA — Guia de Tipografia Responsiva
+   3 breakpoints: 320px (base) → 375px → 768px+
+   .painel-page sobrescreve lp-responsive.css (0-2-0)
+================================================== */
+
+/* BASE 320px ---------------------------------------- */
+.painel-page .hero__title {
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+.painel-page .problem__title,
+.painel-page .method__title,
+.painel-page .bonus__title,
+.painel-page .modules__title,
+.painel-page .audience__title,
+.painel-page .pricing__title,
+.painel-page .guarantee__title,
+.painel-page .about__title,
+.painel-page .faq__title,
+.painel-page .cta-final__title {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.painel-page .hero__eyebrow,
+.painel-page .hero__description,
+.painel-page .problem__body,
+.painel-page .problem__list-item,
+.painel-page .callout__text,
+.painel-page .story__text,
+.painel-page .story__emphasis,
+.painel-page .method__body,
+.painel-page .method__step-text,
+.painel-page .method__label,
+.painel-page .bonus__item-title,
+.painel-page .bonus__item-desc,
+.painel-page .modules__item-title,
+.painel-page .modules__item-desc,
+.painel-page .audience__item,
+.painel-page .pricing__scarcity,
+.painel-page .guarantee__subtitle,
+.painel-page .guarantee__body,
+.painel-page .about__text,
+.painel-page .cta-final__description,
+.painel-page .method__iph-item,
+.painel-page .bonus__list-item,
+.painel-page .bonus__footer,
+.painel-page .story__read-more,
+.painel-page .pricing__includes-label,
+.painel-page .pricing__items li,
+.painel-page .faq__question,
+.painel-page .faq__answer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.painel-page .btn {
+    font-size: 14px;
+    min-height: 48px;
+}
+
+/* ≥ 375px ------------------------------------------- */
+@media (min-width: 375px) {
+    .painel-page .hero__title { font-size: 26px; }
+
+    .painel-page .problem__title,
+    .painel-page .method__title,
+    .painel-page .bonus__title,
+    .painel-page .modules__title,
+    .painel-page .audience__title,
+    .painel-page .pricing__title,
+    .painel-page .guarantee__title,
+    .painel-page .about__title,
+    .painel-page .faq__title,
+    .painel-page .cta-final__title { font-size: 20px; }
+
+    .painel-page .hero__eyebrow,
+    .painel-page .hero__description,
+    .painel-page .problem__body,
+    .painel-page .problem__list-item,
+    .painel-page .callout__text,
+    .painel-page .story__text,
+    .painel-page .story__emphasis,
+    .painel-page .method__body,
+    .painel-page .method__step-text,
+    .painel-page .method__label,
+    .painel-page .bonus__item-title,
+    .painel-page .bonus__item-desc,
+    .painel-page .modules__item-title,
+    .painel-page .modules__item-desc,
+    .painel-page .audience__item,
+    .painel-page .pricing__scarcity,
+    .painel-page .guarantee__subtitle,
+    .painel-page .guarantee__body,
+    .painel-page .about__text,
+    .painel-page .cta-final__description,
+    .painel-page .method__iph-item,
+    .painel-page .bonus__list-item,
+    .painel-page .bonus__footer,
+    .painel-page .story__read-more,
+    .painel-page .pricing__includes-label,
+    .painel-page .pricing__items li,
+    .painel-page .faq__question,
+    .painel-page .faq__answer p { font-size: 15px; }
+
+    .painel-page .btn { font-size: 15px; }
+}
+
+/* ≥ 768px ------------------------------------------- */
+@media (min-width: 768px) {
+    .painel-page .hero__title { font-size: 40px; }
+
+    .painel-page .problem__title,
+    .painel-page .method__title,
+    .painel-page .bonus__title,
+    .painel-page .modules__title,
+    .painel-page .audience__title,
+    .painel-page .pricing__title,
+    .painel-page .guarantee__title,
+    .painel-page .about__title,
+    .painel-page .faq__title,
+    .painel-page .cta-final__title { font-size: 24px; }
+
+    .painel-page .hero__eyebrow,
+    .painel-page .hero__description,
+    .painel-page .problem__body,
+    .painel-page .problem__list-item,
+    .painel-page .callout__text,
+    .painel-page .story__text,
+    .painel-page .story__emphasis,
+    .painel-page .method__body,
+    .painel-page .method__step-text,
+    .painel-page .method__label,
+    .painel-page .bonus__item-title,
+    .painel-page .bonus__item-desc,
+    .painel-page .modules__item-title,
+    .painel-page .modules__item-desc,
+    .painel-page .audience__item,
+    .painel-page .pricing__scarcity,
+    .painel-page .guarantee__subtitle,
+    .painel-page .guarantee__body,
+    .painel-page .about__text,
+    .painel-page .cta-final__description,
+    .painel-page .method__iph-item,
+    .painel-page .bonus__list-item,
+    .painel-page .bonus__footer,
+    .painel-page .story__read-more,
+    .painel-page .pricing__includes-label,
+    .painel-page .pricing__items li,
+    .painel-page .faq__question,
+    .painel-page .faq__answer p { font-size: 16px; }
+
+    .painel-page .btn { font-size: 16px; }
+}
+
+/* ≥ 1024px ------------------------------------------ */
+@media (min-width: 1024px) {
+    .painel-page .header__content  { justify-content: center; }
+    .painel-page .cta-mid .btn     { width: auto; }
+    .painel-page .cta-mid .container { display: flex; justify-content: center; }
+    .painel-page .pricing__card-header { gap: 40px; }
+}
+
+/* ≥ 1280px — anula grid de 3 colunas dos módulos ----- */
+@media (min-width: 1280px) {
+    .painel-page .modules__list {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
