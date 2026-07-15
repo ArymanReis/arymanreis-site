@@ -237,6 +237,23 @@
 }
 
 /* --------------------------------------------------
+   MÉTODO — preview da planilha
+-------------------------------------------------- */
+.method__preview {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.method__preview-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.40);
+}
+
+/* --------------------------------------------------
    MÓDULOS — centraliza cards (somente 2 itens)
 -------------------------------------------------- */
 .painel-page .modules__item {
