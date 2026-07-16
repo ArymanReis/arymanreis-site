@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
 }
 
 /* --------------------------------------------------
@@ -55,6 +55,7 @@
     font-weight: 900;
     color: var(--color-white);
     line-height: 1.35;
+    text-transform: uppercase;
     margin: 0;
 }
 
@@ -100,11 +101,29 @@
 }
 
 /* --------------------------------------------------
-   ÍCONES — BASE 20px, escala a 768px
+   ÍCONES — clip wrapper mostra só o badge
+   Matemática: badge do gerente = 32/199 da largura total.
+   A imagem precisa de height: 26px para o badge preencher 20px.
+   Mesmo cálculo vale para o aryman-reis (badge = 48/205).
 -------------------------------------------------- */
+.links-bio__card-icon-wrap {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
 
 .links-bio__card-icon--gerente,
-.links-bio__card-icon--logo,
+.links-bio__card-icon--logo {
+    position: absolute;
+    height: 26px;
+    width: auto;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .links-bio__card-icon--youtube {
     height: 20px;
     width: auto;
@@ -171,9 +190,18 @@
         margin: 0 auto;
     }
 
-    /* Ícones escalam a 24px */
+    /* Clip wrapper escala a 24px */
+    .links-bio__card-icon-wrap {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* height: 32px garante que o badge preencha os 24px do clip */
     .links-bio__card-icon--gerente,
-    .links-bio__card-icon--logo,
+    .links-bio__card-icon--logo {
+        height: 32px;
+    }
+
     .links-bio__card-icon--youtube {
         height: 24px;
     }
