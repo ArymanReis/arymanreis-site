@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     text-align: center;
 }
 
@@ -55,16 +55,14 @@
     font-weight: 900;
     color: var(--color-white);
     line-height: 1.35;
-    text-transform: uppercase;
     margin: 0;
-    padding: 0;
 }
 
 .links-bio__author {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
-    color: var(--color-white);
+    color: rgba(251, 248, 252, 0.60);
     margin: 0;
 }
 
@@ -78,18 +76,19 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .links-bio__card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
-    min-height: 54px;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+    min-height: 60px;
     border-radius: var(--radius);
-    background: rgba(251, 248, 252, 0.20);
+    background: rgba(251, 248, 252, 0.10);
     color: var(--color-white);
     text-decoration: none;
     position: relative;
@@ -97,13 +96,17 @@
 }
 
 .links-bio__card:hover {
-    background: rgba(251, 248, 252, 0.28);
+    background: rgba(251, 248, 252, 0.18);
 }
 
-/* Wrapper para o Gerente Notável — crop mostra só o badge "N" */
+/* --------------------------------------------------
+   ÍCONES — BASE 20px, escala a 768px
+-------------------------------------------------- */
+
+/* Wrapper para o Gerente Notável — crop mostra só o badge */
 .links-bio__card-icon-wrap {
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
     overflow: hidden;
     flex-shrink: 0;
     position: relative;
@@ -114,13 +117,13 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 44px;
+    height: 20px;
     width: auto;
 }
 
 /* Logo Aryman Reis */
 .links-bio__card-icon--logo {
-    height: 28px;
+    height: 20px;
     width: auto;
     flex-shrink: 0;
 }
@@ -132,32 +135,59 @@
     flex-shrink: 0;
 }
 
-/* Título do card */
+/* --------------------------------------------------
+   TEXTO DOS CARDS
+-------------------------------------------------- */
+.links-bio__card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+}
+
 .links-bio__card-title {
     font-family: var(--font-primary);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--color-white);
-    line-height: 1.5;
+    line-height: 1.4;
+}
+
+.links-bio__card-subtitle {
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(251, 248, 252, 0.65);
+    line-height: 1.4;
 }
 
 /* --------------------------------------------------
-   CARD YOUTUBE — borda com gradiente
-   Mesma técnica usada em agradecimento.css
+   BORDAS DEGRADÊ
+   Técnica ::before com CSS mask — igual agradecimento.css
 -------------------------------------------------- */
+.links-bio__card--gradient::before,
 .links-bio__card--youtube::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: var(--radius);
     padding: 1px;
-    background: linear-gradient(218deg, #FFF 13.21%, #F00 86.95%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     pointer-events: none;
+}
+
+/* Cinza → azul (cards 1 e 2) */
+.links-bio__card--gradient::before {
+    background: linear-gradient(218deg, #C5C5C7 13.21%, #97979A 42.1%, #4D4DFF 83.54%);
+}
+
+/* Branco → vermelho (YouTube) */
+.links-bio__card--youtube::before {
+    background: linear-gradient(218deg, #FFF 13.21%, #F00 86.95%);
 }
 
 /* --------------------------------------------------
@@ -168,7 +198,7 @@
 }
 
 /* --------------------------------------------------
-   RESPONSIVO — desktop
+   RESPONSIVO — ≥ 768px
 -------------------------------------------------- */
 @media (min-width: 768px) {
     .links-bio__quote {
@@ -178,5 +208,31 @@
     .links-bio__list {
         max-width: 480px;
         margin: 0 auto;
+    }
+
+    /* Ícones escalam a 24px */
+    .links-bio__card-icon-wrap {
+        width: 24px;
+        height: 24px;
+    }
+
+    .links-bio__card-icon--gerente {
+        height: 24px;
+    }
+
+    .links-bio__card-icon--logo {
+        height: 24px;
+    }
+
+    .links-bio__card-icon--youtube {
+        height: 24px;
+    }
+
+    .links-bio__card-title {
+        font-size: 15px;
+    }
+
+    .links-bio__card-subtitle {
+        font-size: 13px;
     }
 }
