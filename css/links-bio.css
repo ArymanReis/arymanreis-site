@@ -103,32 +103,8 @@
    ÍCONES — BASE 20px, escala a 768px
 -------------------------------------------------- */
 
-/* Wrapper para o Gerente Notável — crop mostra só o badge */
-.links-bio__card-icon-wrap {
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.links-bio__card-icon--gerente {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 20px;
-    width: auto;
-}
-
-/* Logo Aryman Reis */
-.links-bio__card-icon--logo {
-    height: 20px;
-    width: auto;
-    flex-shrink: 0;
-}
-
-/* YouTube */
+.links-bio__card-icon--gerente,
+.links-bio__card-icon--logo,
 .links-bio__card-icon--youtube {
     height: 20px;
     width: auto;
@@ -196,19 +172,8 @@
     }
 
     /* Ícones escalam a 24px */
-    .links-bio__card-icon-wrap {
-        width: 24px;
-        height: 24px;
-    }
-
-    .links-bio__card-icon--gerente {
-        height: 24px;
-    }
-
-    .links-bio__card-icon--logo {
-        height: 24px;
-    }
-
+    .links-bio__card-icon--gerente,
+    .links-bio__card-icon--logo,
     .links-bio__card-icon--youtube {
         height: 24px;
     }
