@@ -1,0 +1,746 @@
+/* ============================================
+   LANDING PAGE - GERENTE NOTÁVEL (320px Mobile)
+   ============================================ */
+
+/* === CONTAINER PRINCIPAL === */
+.landpage {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  overflow: hidden;
+}
+
+/* === SEÇÃO 01 - HEADER === */
+.secao-header {
+  width: 320px;
+  background: #2b2b31;
+  border: 1px solid #0e0e15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 31px;
+  background: #fbf8fc;
+  border: 0.67px solid #fbf8fc;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+/* === SEÇÃO 02 - HERO === */
+.secao-hero {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.hero-title {
+  width: 280px;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.animacao-gerente {
+  width: 280px;
+}
+
+.animacao-box {
+  width: 280px;
+  background: rgba(231, 231, 232, 0.10);
+  border: 1px solid #fbf8fc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.hero-description {
+  width: 280px;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.video-vsl {
+  width: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.video-vsl-text {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #2b2b31;
+}
+
+.botao {
+  width: 280px;
+  background: linear-gradient(180deg, #6d6dff 0%, #4d4dff 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+.botao-text {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.botao .arrow {
+  width: 10px;
+  border: 2px solid #fbf8fc;
+}
+
+/* === SEÇÃO 03 - DOR / PROBLEMA === */
+.secao-dor-problema {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-dor-problema .title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.secao-dor-problema .description {
+  width: 280px;
+  font-weight: 400;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+.box-destaque {
+  width: 280px;
+  background: rgba(251, 248, 252, 0.20);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-destaque p {
+  width: 240px;
+  font-size: 14px;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+/* === SEÇÃO 04 - STORY === */
+.secao-story {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.historia {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.historia .title {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.box-historia {
+  width: 280px;
+  background: rgba(231, 231, 232, 0.10);
+  border: 1px solid #fbf8fc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* === SEÇÃO 05 - MÉTODO / SOLUÇÃO === */
+.secao-metodo {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-metodo .title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.secao-metodo .description {
+  width: 280px;
+  font-size: 14px;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+.box-etapas {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.box-etapas .subtitle {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.etapa-item {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* === SEÇÃO 06 - O QUE VOCÊ RECEBE === */
+.secao-recebe {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-recebe .title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.box-modulos {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modulo {
+  width: 280px;
+  background: rgba(251, 248, 252, 0.20);
+  border: 1px solid #fbf8fc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* === SEÇÃO 07 - BÔNUS === */
+.secao-bonus {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-bonus .title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-bonus {
+  width: 280px;
+  background: rgba(251, 248, 252, 0.20);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-bonus p {
+  width: 240px;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+/* === SEÇÃO 08 - PARA QUEM É / NÃO É === */
+.secao-para-quem {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-para-quem .title {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.box-para-quem-e {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-para-quem-nao-e {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.checklist-item {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* === SEÇÃO 09 - OFERTA === */
+.secao-oferta {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-oferta .title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.card-oferta {
+  width: 280px;
+  background: rgba(251, 248, 252, 0.20);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-oferta .logo-completa {
+  width: 172px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.card-oferta .title-card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-oferta .preco-box {
+  width: 240px;
+  background: #fbf8fc;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-oferta .detalhes {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-oferta .botao {
+  width: 240px;
+  background: linear-gradient(180deg, #6d6dff 0%, #4d4dff 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+.card-oferta .garantias {
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === SEÇÃO 10 - GARANTIA === */
+.secao-garantia {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-garantia .title {
+  width: 280px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.garantia-box {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.garantia-icon {
+  width: 50px;
+  border: 4px solid #fbf8fc;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.garantia-text {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* === SEÇÃO 11 - SOBRE O INSTRUTOR === */
+.secao-instrutor {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-instrutor .title {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.instrutor-foto {
+  width: 201px;
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+}
+
+.instrutor-bio {
+  width: 280px;
+  font-size: 14px;
+  text-align: left;
+  color: #fbf8fc;
+}
+
+/* === SEÇÃO 12 - FAQ === */
+.secao-faq {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.faq-title {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.faq-title h2 {
+  width: 280px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.faqs {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  width: 280px;
+  background: rgba(251, 248, 252, 0.20);
+  border: 1px solid #fbf8fc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* === SEÇÃO 13 - CTA FINAL === */
+.secao-cta-final {
+  width: 320px;
+  background: #2b2b31;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.secao-cta-final .title {
+  width: 280px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+.secao-cta-final .subtitle {
+  width: 280px;
+  text-align: center;
+  color: #fbf8fc;
+}
+
+.secao-cta-final .botao {
+  width: 280px;
+  background: linear-gradient(180deg, #6d6dff 0%, #4d4dff 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+.secao-cta-final .botao-text {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fbf8fc;
+  text-transform: uppercase;
+}
+
+/* === SEÇÃO 14 - FOOTER === */
+.secao-footer {
+  width: 320px;
+  background: #4d4dff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 101px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.footer-links {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-nav {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.redes-sociais {
+  width: 174px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  width: 280px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  color: #fbf8fc;
+}

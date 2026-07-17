@@ -1,0 +1,215 @@
+Componente: animacao-gerente comum para gerente notável
+
+Aryman descrevendo:
+
+INÍCIO (loop)
+  [ glass fixo — blur na frente ]
+  [ gerente-comum.svg — atrás do glass → desfocada ]
+
+MEIO — momento de "transpassar"
+  [ glass fixo — blur no meio ]
+  [ gerente-notavel.svg — atrás do glass → desfocada ]
+        ↓ cross-fade + scale 0.92 → 1.0
+  [ gerente-notavel.svg — na frente do glass → nítida ]
+
+FIM
+  [ glass fixo — blur atrás ]
+  [ gerente-notavel.svg — na frente do glass → nítida ]
+
+  ... fade out → volta ao INÍCIO
+
+as logos svg estão nesse caminho C:\Users\aryma\Documents\landing-pages\Aryman_Site\assets\logos
+
+Figma:
+
+Tipo: Component Set (variantes com animação automática em loop) Dimensões: 280 × 107px por variante
+
+Variantes
+Variante	Conteúdo exibido
+gerente-comum	"GERENTE DE LOJA" + "COMUM" (só texto, sem logo)
+gerente-notavel-1	Logo N + "GERENTE" + "NOTÁVEL" (vidro atrás do texto)
+gerente-notavel-2	Logo N + "GERENTE" + "NOTÁVEL" (vidro na frente do texto)
+
+
+Fluxo de animação (loop automático)
+
+gerente-comum ──(2s)──► gerente-notavel-1 ──(0.1s)──► gerente-notavel-2 ──(2s)──► gerente-comum
+
+
+De	Para	Trigger	Delay	Transição	Duração	Easing
+gerente-comum	gerente-notavel-1	After Timeout	2s	Dissolve	300ms	Ease Out
+gerente-notavel-1	gerente-notavel-2	After Timeout	0.1s	Dissolve	300ms	Ease Out
+gerente-notavel-2	gerente-comum	After Timeout	2s	Dissolve	300ms	Ease Out
+Comportamento: O componente inicia mostrando "GERENTE DE LOJA COMUM", aguarda 2 segundos, faz dissolve para a versão "GERENTE NOTÁVEL" (com vidro atrás), transita quase instantaneamente (0.1s) para a versão com vidro na frente, permanece 2 segundos e volta ao início — loop infinito.
+
+
+/* Container vidro (Frame 10/11/12) — presente em todas as variantes */
+.animacao-gerente__card {
+  width: 280px;
+  height: 107px;
+  border-radius: 5px;
+
+  /* Glassmorphism */
+  background: rgba(231, 231, 232, 0.1);       /* #E7E7E8 a 10% */
+  border: 1px solid rgba(251, 248, 252, 0.5);  /* #FBF8FC a 50% */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  /* Layout interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  gap: 20px;
+}
+
+
+/* Texto "GERENTE DE LOJA" */
+.gerente-comum__label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;              /* SemiBold */
+  font-size: 12px;
+  line-height: auto;
+  color: #FBF8FC;
+  text-transform: uppercase;
+}
+
+/* Texto "COMUM" */
+.gerente-comum__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;              /* SemiBold */
+  font-size: 32px;
+  line-height: auto;
+  color: #FBF8FC;
+}
+
+
+/* Wrapper do conteúdo */
+.gerente-notavel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  top: 33px;
+  left: 41px;
+}
+
+/* Logo "N" — ícone vetorial */
+.gerente-notavel__logo {
+  width: 31.33px;
+  height: 40.07px;
+  /* Gradient diagonal no shape do logo */
+  background: linear-gradient(
+    225deg,
+    #C5C5C7 0%,           /* cinza claro */
+    #97979A 39.19%,        /* cinza médio */
+    #4D4DFF 95.39%         /* azul/roxo */
+  );
+  border: 0.67px solid #FBF8FC;
+}
+
+/* Letra "N" dentro do logo */
+.gerente-notavel__logo-letter {
+  width: 14.93px;
+  height: 16.8px;
+  fill: #FFFFFF;
+}
+
+/* Texto "GERENTE" */
+.gerente-notavel__label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;              /* SemiBold */
+  font-size: 14px;
+  line-height: auto;
+  color: #FBF8FC;
+  text-transform: uppercase;
+}
+
+/* Texto "NOTÁVEL" */
+.gerente-notavel__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;              /* Black */
+  font-size: 32px;
+  line-height: auto;
+  color: #FBF8FC;
+  text-transform: uppercase;
+}
+
+/* Keyframes para o ciclo completo: 4.7s total
+   0s–2s:     gerente-comum visível
+   2s–2.3s:   dissolve para notavel-1
+   2.3s–2.4s: pausa mínima em notavel-1
+   2.4s–2.7s: dissolve para notavel-2
+   2.7s–4.7s: notavel-2 visível
+   4.7s–5s:   dissolve de volta ao comum
+*/
+
+.animacao-gerente {
+  position: relative;
+  width: 280px;
+  height: 107px;
+}
+
+/* Estado "Gerente Comum" */
+@keyframes fadeComum {
+  0%    { opacity: 1; }
+  40%   { opacity: 1; }    /* visível por 2s */
+  46%   { opacity: 0; }    /* dissolve 300ms */
+  94%   { opacity: 0; }    /* invisível enquanto "notável" aparece */
+  100%  { opacity: 1; }    /* dissolve de volta */
+}
+
+/* Estado "Gerente Notável" (conteúdo logo + texto) */
+@keyframes fadeNotavel {
+  0%    { opacity: 0; }
+  40%   { opacity: 0; }
+  46%   { opacity: 1; }    /* aparece com dissolve */
+  94%   { opacity: 1; }    /* visível por ~2.4s */
+  100%  { opacity: 0; }    /* dissolve para sumir */
+}
+
+/* Z-index do vidro — sobe na frente brevemente */
+@keyframes glassLayer {
+  0%    { z-index: 1; }
+  46%   { z-index: 1; }    /* vidro atrás do texto */
+  48%   { z-index: 3; }    /* vidro passa na frente (notavel-2) */
+  94%   { z-index: 3; }
+  100%  { z-index: 1; }
+}
+
+.animacao-gerente__comum {
+  position: absolute;
+  inset: 0;
+  animation: fadeComum 5s ease-out infinite;
+}
+
+.animacao-gerente__notavel-content {
+  position: absolute;
+  inset: 0;
+  animation: fadeNotavel 5s ease-out infinite;
+}
+
+.animacao-gerente__card {
+  animation: glassLayer 5s ease-out infinite;
+}
+
+
+Paleta de cores
+Uso	Hex	RGBA
+Texto (todos)	#FBF8FC	rgba(251, 248, 252, 1)
+Background card	#E7E7E8	rgba(231, 231, 232, 0.1)
+Border card	#FBF8FC	rgba(251, 248, 252, 0.5)
+Logo gradient stop 1	#C5C5C7	—
+Logo gradient stop 2	#979799	—
+Logo gradient stop 3	#4D4DFF	—
+Logo stroke	#FBF8FC	—
+Logo "N"	#FBF8FC	—
+Tipografia
+Elemento	Font	Weight	Size
+"GERENTE DE LOJA"	Montserrat	SemiBold (600)	12px
+"COMUM"	Montserrat	SemiBold (600)	32px
+"GERENTE"	Montserrat	SemiBold (600)	14px
+"NOTÁVEL"	Montserrat	Black (900)	32px
+

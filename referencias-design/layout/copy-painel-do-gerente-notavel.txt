@@ -1,0 +1,234 @@
+SEÇÃO 1 — Logo
+Montserrat Regular 16px Aryman Reis
+
+SEÇÃO 2 — Hero
+Montserrat Regular 14px Bom dia! Gerente de loja. 👋
+
+Montserrat Black 18px (peso 900) Pare de ser só mais um gerente comum. Em 30 minutos, com dado na mão, você está pronto pra qualquer pergunta do supervisor — e vira um gerente notável."
+
+Montserrat SemiBold 12px GERENTE DE LOJA
+
+Montserrat SemiBold 32px COMUM
+
+Montserrat Regular 14px + Montserrat SemiBold 14px (misto) Sua planilha de gestão de equipe + kit de prompts de IA, prontos pra usar ainda hoje — sem curso longo, sem enrolação."
+
+SEÇÃO 3 — Vídeo VSL
+Montserrat Regular 12px Video VSL do Youtube adaptar
+
+Montserrat SemiBold 14px painel do gerente agora (botão)
+
+SEÇÃO 4 — Dor / Problema
+Montserrat ExtraBold 16px (peso 800) Você lidera uma equipe. Mas sabe, de verdade, quem está entregando resultado?
+
+Montserrat Regular 14px Se a resposta foi "mais ou menos" ou "eu acho que sim" — você não está sozinho.
+
+A maioria dos gerentes toma decisões no achismo:
+
+Não sabe quem vende mais por mérito e quem só está no turno certo
+
+Não consegue explicar pro supervisor por que decidiu manter ou demitir alguém
+
+Trava quando o supervisor pergunta os números de cabeça
+
+Sente que apaga incêndio o dia inteiro — e nunca sobra tempo pra liderar de verdade
+
+SEÇÃO 5 — Destaque (box)
+Montserrat Regular 14px + Montserrat SemiBold 14px (misto) Gerentes de loja não deixam de crescer por falta de competência.
+
+Deixam de crescer porque não conseguem transformar dados em decisões.
+
+SEÇÃO 6 — História
+Montserrat SemiBold 14px Uma acontecimento e conversa que nunca esqueci.
+
+Source Code Pro Regular 12px + Source Code Pro Bold 12px (misto) Os vendedores saíram comemorando no corredor do shopping, abraçados.
+
+O dono da empresa via tudo pela vitrine.
+
+Sete meses antes, essa era a pior loja da rede.
+
+Eu era o supervisor. Todo mês, o concorrente do lado batia mais meta que a gente. Sempre. Eu olhava os números e não entendia o que estava errado. O gerente tinha experiência. O time não era ruim. A loja era boa.
+
+Alguma coisa não fechava.
+
+Decidi entrar fundo. Auditoria, conversa individual com cada vendedor, estoque, produto, presença, consistência.
+
+O que encontrei não estava no relatório de vendas. Estava nos dados que ninguém olhava nos dados comportamentais.
+
+Tomei decisões difíceis. Troquei o gerente. Movi pessoas. Reforcei o time. E passei a acompanhar o que os números diziam — não o que eu achava que estava acontecendo.
+
+Em dezembro, sete meses depois, essa loja bateu R$900 mil em vendas no mês.
+
+Eu não sabia se estava fazendo a coisa certa porque não tinha critério.
+
+Dado é critério. Sem ele, você gerencia no achismo — e o achismo te expõe na hora que mais importa.
+
+Aquela loja foi meu primeiro raio-x sobre liderança e dado. Não foi o último.
+
+Minha carreira ainda ia me levar pra fora da moda — pra alimentação, indústria automotiva, meu próprio negócio, e por fim, uma multinacional.
+
+E o que eu vi ali dentro daquela loja, eu ia ver de novo — numa escala bem maior.
+
+continuar lendo...
+
+Anos depois daquela loja, eu já não estava mais na moda.
+
+Estava numa multinacional, liderando uma operação bem maior.
+
+Um dia, precisei substituir alguém da minha equipe. Fui buscar entre 120 pessoas da operação.
+
+Não achei ninguém — nem os mais experientes — que soubesse liderar com dado na mão.
+
+A mesma coisa que eu tinha visto naquela loja de moda, anos antes, se repetia numa escala dez vezes maior: quem tem resultado nem sempre é quem é promovido. É quem consegue mostrar o resultado com dado.
+
+Vi profissional bom ficar parado enquanto a vaga era preenchida por alguém de fora — só porque ninguém ali sabia transformar número em decisão.
+
+Foi ali que decidi: ia usar tudo o que aprendi cruzando moda, alimentação, indústria automotiva e meu próprio negócio pra ensinar isso pra quem começou onde eu comecei — no chão de loja.
+
+Você não precisa esperar a próxima vaga passar na sua frente pra descobrir, tarde demais, que faltava isso pra você.
+
+Foi assim que nasceu o Painel do Gerente: a planilha e o kit de IA que colocam na sua mão o mesmo critério que separou quem foi promovido de quem ficou parado.
+
+Você não precisa esperar a próxima vaga passar na sua frente pra descobrir, tarde demais, que faltava isso pra você.
+
+SEÇÃO 7 — Botão CTA intermediário
+Montserrat SemiBold 12px painel do gerente agora (botão)
+
+SEÇÃO 8 — Método / Solução (IPH)
+Montserrat ExtraBold 16px (peso 800) Sua planilha já vem pronta. E com um índice que nenhum concorrente usa: o IPH.
+
+Montserrat Regular 14px A maioria dos rankings de loja só olha pra um número: quanto o vendedor vendeu.
+
+Isso é injusto e incompleto — ignora quem falta, quem atrasa, quem está sempre presente segurando a loja mesmo sem ser o que mais vende.
+
+Montserrat SemiBold 14px O IPH enxerga o vendedor inteiro, não só a máquina de bater meta:
+
+70% resultado comercial Montserrat Regular 14px — quanto ele vendeu perto da meta
+
+Montserrat SemiBold 14px 30% disciplina Montserrat Regular 14px — presença e pontualidade, o que nenhum outro painel mede
+
+SEÇÃO 9 — 3 Etapas
+Montserrat SemiBold 16px 3 etapas simples:
+
+Montserrat Regular 12px 01 Montserrat Regular 16px Cadastre sua equipe e as metas — uma vez só, atualiza tudo
+
+Montserrat Regular 12px 02 Montserrat Regular 16px Cole os dados do seu PDV e marque presença — toda semana
+
+Montserrat Regular 12px 03 Montserrat Regular 16px + Montserrat Bold 16px (misto) Veja o IPH calcular sozinho — comercial e comportamental juntos, sem você fazer conta nenhuma
+
+SEÇÃO 10 — O que você recebe
+Montserrat ExtraBold 16px (peso 800) O que você recebe
+
+Montserrat SemiBold 16px Vídeo ensinando a usar o PAINEL DO GERENTE.
+
+Montserrat Regular 16px Direto ao ponto: você assiste uma vez, aplica na mesma semana. Sem série de aulas, sem enrolação — é o tempo de um intervalo.
+
+Montserrat SemiBold 16px Kit IA do Gerente
+
+Montserrat Regular 16px 7 prompts prontos. Você tira print do painel, cola no ChatGPT, e recebe o roteiro pronto em menos de 2 minutos — reunião com vendedor, feedback, dinâmica de grupo, desafio de vendas.
+
+SEÇÃO 11 — Dentro do Kit IA do Gerente (Bônus)
+Montserrat ExtraBold 16px (peso 800) Dentro do Kit IA do Gerente
+
+Montserrat SemiBold 14px 7 prompts prontos para qualquer situação da sua semana:
+
+Montserrat Regular 14px Análise geral do painel — pra abrir a semana ou preparar a reunião com o supervisor Reunião 1:1 com vendedor abaixo da meta Reunião 1:1 com vendedor acima da meta — reconhecimento com dado, não elogio vazio Reunião geral do time — pauta pronta Dinâmica de grupo pra semana difícil Desafio de vendas com premiação Script de feedback baseado no IPH — 5 minutos, corredor ou fim de turno
+
+Montserrat SemiBold Italic 14px Print do painel + prompt + ChatGPT = roteiro pronto em 2 minutos.
+
+SEÇÃO 12 — Para quem é
+Montserrat ExtraBold 16px (peso 800) Para quem é:
+
+Montserrat Regular 14px
+
+Gerente de loja de moda que lidera equipe de vendedores
+Quem quer chegar preparado na reunião com o supervisor ou regional
+Quem quer se posicionar pra próxima vaga com dado, não com esforço invisível
+Quem ainda não tem nenhuma base organizada e quer começar do zero
+Quem já tem dado solto no PDV mas nunca soube transformar isso em decisão
+Quem usa (ou consegue usar) Excel básico.
+SEÇÃO 13 — Para quem NÃO é
+Montserrat ExtraBold 16px (peso 800) Para quem não é:
+
+Montserrat Regular 14px
+
+Quem busca curso avançado de programação ou Power BI
+Quem não lidera nenhuma equipe atualmente ou não deseja ser líder.
+Quem quer só teoria de liderança, sem aplicar em planilha real
+Quem não tem interesse em desenvolver o próprio time
+Quem só usa Google Sheets e não tem Excel
+SEÇÃO 14 — Oferta / Preço
+Montserrat ExtraBold 16px (peso 800) Sua vez de liderar com dados começa agora
+
+Montserrat SemiBold 20px PAINEL DO GERENTE
+
+Montserrat SemiBold 14px O que inclui: Planilha Painel do Gerente (Excel) Montserrat Regular 14px — com IPH automático Montserrat SemiBold 14px Vídeo de demostração Kit IA do Gerente — Montserrat Regular 14px 7 prompts prontos (bônus)
+
+Montserrat Regular 14px + Montserrat SemiBold 14px (misto) Essa condição é exclusiva pra turma de lançamento — os 100 primeiros gerentes que entrarem. Depois disso, o preço volta ao valor normal.
+
+Montserrat Regular 12px DE Montserrat ExtraBold 12px R$ Montserrat ExtraBold 24px 297,00
+
+Montserrat ExtraBold 60px (peso 800) 97,00
+
+Montserrat Bold 14px 12x 10,03 Montserrat Regular 14px no Montserrat SemiBold 14px Cartão crédito Montserrat Regular 14px , Pix ou Boleto
+
+Montserrat SemiBold 12px painel do gerente agora (botão)
+
+Montserrat Regular 12px Compra Segura | Satisfação Garantida | Acesso Imediato
+
+SEÇÃO 15 — Garantia
+Montserrat ExtraBold 18px (peso 800) Risco zero para você
+
+Montserrat SemiBold 32px 7
+
+Montserrat SemiBold 16px Risco Zero: Teste por 7 dias.
+
+Montserrat Regular 14px Se em até 7 dias você sentir que o curso não é para você, devolvemos 100% do seu investimento. Sem perguntas, sem burocracia.
+
+SEÇÃO 16 — Quem é Aryman Reis
+Montserrat ExtraBold 20px (peso 800) Quem é Aryman Reis
+
+Montserrat Regular 14px + Montserrat SemiBold 14px (misto) Esposo da Bruna e pai do Abraão. Jesus está em tudo o que faço.
+
+Já liderei em empresas pequenas, médias e multinacionais — moda, alimentação, indústria automotiva, confecção.
+
+Não é ostentação de carreira. É visão macro que poucos especialistas desse mercado têm.
+
+Numa multinacional, precisei encontrar meu substituto entre 120 pessoas da operação.
+
+Não encontrei ninguém — nem os mais experientes — que soubesse liderar com dado na mão.
+
+Foi ali que entendi: o varejo de moda vive uma escassez real de liderança baseada em dados.
+
+Ninguém ensina isso pra quem vem da base. Foi por isso que escolhi capacitar esses líderes.
+
+Hoje uso o que aprendi cruzando setores — tecnologia, dados, IA aplicada à liderança — pra te levar do nível comum ao nível raro: aquele gerente que antecipa, decide com segurança, e o regional escuta antes de qualquer decisão importante.
+
+Minha oração é que Deus me dê o dom do ensino. Meu sonho é ter uma escola de tecnologia para líderes — e melhorar a vida de mil líderes até 2027.
+
+SEÇÃO 17 — FAQ
+Montserrat SemiBold 20px FAQ - Perguntas frequentes
+
+Montserrat SemiBold 16px Preciso saber Excel avançado para usar a planilha? Montserrat Regular 14px Avançado, não. Mas você precisa saber o básico — abrir arquivo, colar dado numa célula, entender o que é uma aba. Se você já usa Excel ou Sheets no dia a dia da loja, mesmo que só pra fazer conta simples, você dá conta. A parte difícil — o cálculo do IPH — a planilha já faz sozinha. Você não escreve fórmula nenhuma.
+
+Montserrat SemiBold 16px Como recebo o acesso? Montserrat Regular 14px Imediatamente após a confirmação do pagamento, direto na plataforma — planilha, vídeo demostrativo e Kit IA do Gerente liberados na hora, no seu email.
+
+Montserrat SemiBold 16px Por quanto tempo tenho acesso? Montserrat Regular 14px Vitalício. Você usa no seu ritmo, sem prazo de expiração.
+
+Montserrat SemiBold 16px E se eu sentir que não é pra mim? Montserrat Regular 14px 7 dias de garantia incondicional. Pede reembolso, devolvemos 100%, sem perguntas.
+
+Montserrat SemiBold 16px E se eu não me adaptar ao método? Montserrat Regular 14px Você tem 7 dias de garantia incondicional. Se sentir que o curso não é para você, basta solicitar o reembolso — devolvemos 100% do seu investimento, sem perguntas.
+
+Montserrat SemiBold 16px Preciso ter uma equipe grande para aplicar o que aprender? Montserrat Regular 14px Não. Funciona com 2 vendedores ou com 20 — o que importa é ter dado pra organizar e decisão pra tomar.
+
+SEÇÃO 18 — CTA Final
+Montserrat ExtraBold 18px (peso 800) Não espere a próxima oportunidade passar por falta de dados.
+
+Montserrat Regular 14px + Montserrat SemiBold 14px (misto) Essa condição é exclusiva pra turma de lançamento — os 100 primeiros gerentes que entrarem. Depois disso, o preço volta ao valor normal.
+
+Montserrat SemiBold 12px painel do gerente agora (botão)
+
+SEÇÃO 19 — Footer
+Montserrat Regular 16px Políticas de Privacidade Termos de Uso Método LPE @arymanreis
+
+Montserrat Regular 12px © 2026 Aryman Reis. Todos os direitos reservados.
+

@@ -1,0 +1,165 @@
+# Guia de Tipografia Responsiva (Mobile First)
+
+## Objetivo
+
+Este guia define uma padronização de tipografia para landing pages com foco em **dispositivos pequenos**, iniciando em **320px** de largura. A prioridade é garantir boa legibilidade, melhor aproveitamento do espaço e uma experiência consistente em todos os dispositivos.
+
+---
+
+# Breakpoints
+
+| Dispositivo    | Largura |
+| -------------- | ------: |
+| Mobile Pequeno |   320px |
+| Mobile Médio   |   375px |
+| Mobile Grande  |   768px |
+| Desktop        | 1024px+ |
+
+---
+
+# Escala Tipográfica
+
+| Elemento       |    320px |    375px |  768px+ |
+| -------------- | -------: | -------: | ------: |
+| H1             |  22–24px |  24–28px | 40–56px |
+| H2 / Subtítulo |  16–18px |  18–20px | 24–32px |
+| Parágrafo      | **14px** | **15px** | 16–18px |
+| Botão          |     14px |  15–16px | 16–18px |
+
+---
+
+# Configuração para 320px
+
+## Título (H1)
+
+* Fonte: **24px**
+* Line-height: **1.15**
+* Peso: **700**
+* Máximo de **2 a 3 linhas**
+
+---
+
+## Subtítulo
+
+* Fonte: **18px**
+* Line-height: **1.30**
+* Peso: **500**
+* Máximo de **2 a 3 linhas**
+
+---
+
+## Parágrafo
+
+* Fonte: **14px**
+* Line-height: **1.6**
+* Peso: **400**
+* Máximo recomendado:
+
+  * 3 a 5 linhas
+  * Entre 30 e 60 palavras
+
+---
+
+## Botão (CTA)
+
+* Fonte: **14px**
+* Altura mínima: **48px**
+* Largura:
+
+  * Preferencialmente **100%** em telas de 320px
+* Peso: **600**
+
+---
+
+# Espaçamentos
+
+| Elemento              | Espaçamento |
+| --------------------- | ----------: |
+| Margem lateral        |        20px |
+| Título → Subtítulo    |        16px |
+| Subtítulo → Parágrafo |        16px |
+| Parágrafo → CTA       |        24px |
+| Padding da seção      |     48–64px |
+
+---
+
+# Área útil do conteúdo
+
+```css
+width: 100%;
+max-width: 280px;
+margin: 0 auto;
+padding: 0 20px;
+```
+
+Em uma tela de **320px**:
+
+* Largura total: **320px**
+* Padding: **20px** em cada lado
+* Área útil: **280px**
+
+---
+
+# CSS Base
+
+```css
+body{
+    font-size:14px;
+    line-height:1.6;
+}
+
+h1{
+    font-size:24px;
+    line-height:1.15;
+    font-weight:700;
+}
+
+h2{
+    font-size:18px;
+    line-height:1.3;
+    font-weight:500;
+}
+
+p{
+    font-size:14px;
+    line-height:1.6;
+}
+
+button{
+    font-size:14px;
+    min-height:48px;
+    font-weight:600;
+}
+```
+
+---
+
+# Boas práticas
+
+* Desenvolver utilizando a abordagem **Mobile First**.
+* Validar primeiro em **320px**.
+* Evitar rolagem horizontal.
+* Limitar o título a no máximo 3 linhas.
+* Utilizar parágrafos curtos.
+* Manter espaçamento consistente entre os elementos.
+* Garantir contraste suficiente entre texto e fundo.
+* Priorizar clareza e legibilidade antes de aumentar o tamanho das fontes.
+
+---
+
+# Checklist
+
+* ✅ Layout validado em 320px
+* ✅ Sem rolagem horizontal
+* ✅ Parágrafo em 14px
+* ✅ Título entre 22px e 24px
+* ✅ Botão com altura mínima de 48px
+* ✅ Margens laterais de 20px
+* ✅ Hierarquia visual preservada
+* ✅ Boa leitura em dispositivos pequenos
+
+---
+
+# Princípio de Design
+
+> Se o layout funciona perfeitamente em **320px**, ele tende a se adaptar naturalmente para **360px**, **375px**, **390px**, **412px**, **428px** e telas maiores, reduzindo a necessidade de ajustes específicos para cada dispositivo.
