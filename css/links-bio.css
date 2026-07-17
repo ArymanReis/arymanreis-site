@@ -101,34 +101,9 @@
 
 /* --------------------------------------------------
    ÍCONES
-   Wrapper clipa a parte do badge de cada logo.
-   height: 26px nas imagens faz o badge preencher os 20px
-   do clip; margin-top: -3px centraliza verticalmente.
-   YouTube não precisa de wrapper — já é compacto (50×20).
+   Badge-only SVGs (sem wordmark) — mesma lógica do YouTube.
 -------------------------------------------------- */
-.links-bio__card-icon-wrap {
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
-
-.links-bio__card-icon--gerente {
-    max-width: none; /* anula base.css: img { max-width: 100% } */
-    height: 26px;
-    width: 126px; /* 26/41 × 199 = proporcional */
-    flex-shrink: 0;
-}
-
-.links-bio__card-icon--logo {
-    max-width: none;
-    height: 26px;
-    width: 87px; /* 26/61 × 205 = proporcional */
-    flex-shrink: 0;
-}
-
+.links-bio__card-icon,
 .links-bio__card-icon--youtube {
     height: 20px;
     width: auto;
@@ -195,22 +170,7 @@
         margin: 0 auto;
     }
 
-    .links-bio__card-icon-wrap {
-        width: 24px;
-        height: 24px;
-    }
-
-    .links-bio__card-icon--gerente {
-        height: 32px;
-        width: 155px; /* 32/41 × 199 = proporcional */
-    }
-
-    .links-bio__card-icon--logo {
-        height: 32px;
-        width: 107px; /* 32/61 × 205 = proporcional */
-    }
-    /* max-width: none já herdado do bloco base */
-
+    .links-bio__card-icon,
     .links-bio__card-icon--youtube {
         height: 24px;
     }
