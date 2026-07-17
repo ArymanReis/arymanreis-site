@@ -9,6 +9,8 @@
     background: var(--color-bg-quiz);
     min-height: 100vh;
     min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 .links-bio-page main {
